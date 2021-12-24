@@ -1,0 +1,26 @@
+.imgProductPageH1 {
+  background-image: url(../../img/baner/product_page.jpg);
+  background-size: cover;
+  height: 100px;
+  width: 100%;
+}
+.ProductPageH1 {
+  color: white;
+  padding-top: 2.5%;
+  font-size: 20px;
+}
+.breadСrumbs {
+  margin-top: 1%;
+  margin-left: 44%;
+}
+.imgProductPageH1 a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+}
+.imgProductPageH1 a:first-child::after {
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 5px;
+  content: "\02C3";
+}

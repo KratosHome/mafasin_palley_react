@@ -1,0 +1,110 @@
+.HomeProduct img {
+  width: 300px;
+  height: 300px;
+}
+.HomeProductName {
+  margin-top: 10px;
+  color: #111;
+}
+.HomeProductPrise {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.HomeProductPrise :first-child {
+  margin-right: 5px;
+  font-family: SofiaPro;
+  font-size: 15px;
+  font-weight: 700;
+  color: #979797;
+  text-decoration: line-through;
+}
+
+.HomeProductPrise :last-child {
+  font-family: SofiaPro;
+  font-size: 15px;
+  font-weight: 700;
+  color: #2dbbf0;
+}
+.HomeProductHover {
+  position: absolute;
+  margin-top: -180px;
+  display: flex;
+  align-items: center;
+}
+.HomeProductHoverSelectOprions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin-left: 50px;
+  margin-right: 30px;
+  width: 40px;
+  height: 40px;
+  clip-path: circle(50% at center center);
+  letter-spacing: 2px;
+  transition: 500ms;
+  font-size: 16px;
+}
+.HomeProductHoverSelectOprions:hover {
+  background-color: rgb(111, 177, 221);
+  color: white;
+  cursor: pointer;
+  transition: 500ms;
+}
+.HomeProductHoverSelectQuickview {
+  margin-right: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  clip-path: circle(50% at center center);
+  letter-spacing: 2px;
+  transition: 500ms;
+  font-size: 16px;
+}
+.HomeProductHoverSelectQuickview:hover {
+  background-color: rgb(111, 177, 221);
+  color: white;
+  cursor: pointer;
+  transition: 500ms;
+}
+.HomeProductHoverSelectQuickview img {
+  width: 15px;
+  height: 15px;
+}
+.HomeProductHoverSelectAddLikes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  clip-path: circle(50% at center center);
+  letter-spacing: 2px;
+  transition: 500ms;
+  font-size: 16px;
+}
+.HomeProductHoverSelectAddLikes:hover {
+  background-color: rgb(111, 177, 221);
+  color: white;
+  cursor: pointer;
+  transition: 500ms;
+}
+.HomeProductHoverSelectAddLikes img {
+  width: 15px;
+  height: 15px;
+}
+.HomeProductHover {
+  opacity: 0;
+  transform: rotateX(150deg);
+  transform-origin: bottom;
+  transition: 500ms;
+}
+.HomeProduct:hover .HomeProductHover {
+  opacity: 1;
+  transform: rotateY(0deg);
+}

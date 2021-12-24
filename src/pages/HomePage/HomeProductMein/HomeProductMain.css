@@ -1,0 +1,27 @@
+.home_product_container h2 {
+  margin-top: -10px;
+  text-align: center;
+  font-family: SofiaPro;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #111;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.home_product_container:first-child {
+  text-align: center;
+  font-family: SofiaPro;
+  font-size: 17px;
+  font-weight: 500;
+  color: #666;
+  padding-top: 20px;
+  display: block;
+}
+.home_product_list {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
