@@ -3,6 +3,7 @@ import "./HomeProduct.css";
 import bla from "./../../img/product/75_Headset.jpg";
 import like from "./../../img/icons/like.png";
 import search from "./../../img/icons/search.png";
+
 const HomeProduct = (props) => {
   return (
     <div className="HomeProduct">

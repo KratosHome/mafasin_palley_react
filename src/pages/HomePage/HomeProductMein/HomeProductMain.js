@@ -1,17 +1,24 @@
 import React, { useState, useEffect } from "react";
 import "./HomeProductMain.css";
 import HomeProduct from "../../../components/ProductList/HomeProduct";
-import PostServer from "../../../components/API/PostServer";
+import PostServer from "../../../API/PostServer";
+import axios from "axios";
 
-const HomeProductMain = () => {
+const HomeProductMain = ({ props }) => {
   const [getProduct, setGetProduct] = useState([]);
+
   useEffect(() => {
-    fetch("https://run.mocky.io/v3/f3474da5-89d0-4259-887a-2afe069d77f8")
-      .then((res) => res.json())
-      .then((data) => setGetProduct(data));
+    fetchProducts();
   }, []);
+
+  async function fetchProducts() {
+    const getProduct = await PostServer.GetOll();
+    setGetProduct(getProduct);
+  }
+
   return (
     <div className="container bacground_home_product_main">
+      <div>{getProduct.name}</div>
       <div className="col-sx-12 col-sm-12 col-md-12 col-ld-12">
         <div className="home_product_container">
           <h2>BEST SELLER</h2>
