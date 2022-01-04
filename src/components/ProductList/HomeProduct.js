@@ -6,6 +6,7 @@ import search from "./../../img/icons/search.png";
 const HomeProduct = (props) => {
   return (
     <div className="HomeProduct">
+      <div>{props.product.size}</div>
       <img src={bla} />
       <div className="HomeProductName">{props.product.name}</div>
       <div className="HomeProductPrise">
