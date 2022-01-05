@@ -1,0 +1,24 @@
+.BanerMain_img {
+  background-image: url(../../../img/baner/banner2.jpeg);
+  background-size: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+}
+.BanerMain_block {
+  margin-top: 15%;
+  margin-left: 30%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  width: 40%;
+  height: 230px;
+}
+
+.BanerMain_h3 {
+}
+
+.BanerMain_h3 {
+}
+.BanerMain_button {
+}
