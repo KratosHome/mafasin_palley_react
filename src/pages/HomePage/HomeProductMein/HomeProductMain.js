@@ -12,9 +12,12 @@ const HomeProductMain = ({ props }) => {
   }, []);
 
   async function fetchProducts() {
-    const getProduct = await PostServer.GetOll();
+    const getProduct = await PostServer.HomePage();
     setGetProduct(getProduct);
   }
+  const homeProduct = getProduct.map((test) =>
+    test.categories.indexOf("Home Page")
+  );
 
   return (
     <div className="container bacground_home_product_main">

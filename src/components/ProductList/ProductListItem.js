@@ -44,7 +44,7 @@ New test products
 	  "prise": 30,
 	  "newPrise": 25,
 	  "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
-	  "img": "/img/product/Mighty_Mini_130_30W.jpg",
+	  "img": "/img/product/Might_Mini_130_30W.jpg",
 	  "count": ["20"],
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
@@ -56,7 +56,7 @@ New test products
 	  "prise": 30,
 	  "newPrise": 25,
 	  "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
-	  "img": "/../../img/product/PowerBox_160_US.jpg",
+	  "img": "/img/product/PowerBox_160_US.jpg",
 	  "count": ["20"],
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
@@ -108,7 +108,7 @@ New test products
 	  "count": ["20"],
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
-	  "categories": ["Home Page","Oll Pages", "Best seller", "New"]
+	  "categories": ["Oll Pages", "Best seller", "New"]
 	},
 	{
 	  "id": 10,
@@ -120,7 +120,7 @@ New test products
 	  "count": ["20"],
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
-	  "categories": ["Home Page","Oll Pages", "Best seller"]
+	  "categories": ["Oll Pages", "Best seller"]
 	},
 	{
 	  "id": 11,
@@ -128,11 +128,11 @@ New test products
 	  "prise": 30,
 	  "newPrise": 25,
 	  "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
-	  "img": "/../../img/product/Windshield_Smartphone_Mount.jpg",
+	  "img": "/img/product/Windshield_Smartphone_Mount.jpg",
 	  "count": ["20"],
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
-	  "categories": ["Home Page","Oll Pages", "Best seller"]
+	  "categories": ["Oll Pages", "Best seller"]
 	},
 	{
 	  "id": 12,
@@ -144,7 +144,7 @@ New test products
 	  "count": ["20"],
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
-	  "categories": ["Home Page","Oll Pages", "Hot deal", "New"]
+	  "categories": ["Oll Pages", "Hot deal", "New"]
 	}
 ]
 

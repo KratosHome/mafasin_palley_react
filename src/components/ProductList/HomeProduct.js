@@ -5,10 +5,11 @@ import like from "./../../img/icons/like.png";
 import search from "./../../img/icons/search.png";
 
 const HomeProduct = (props) => {
+  console.log(props.product.img);
+
   return (
     <div className="HomeProduct">
-      <div>{props.product.size}</div>
-      <img src={bla} />
+      <img src={props.product.img} />
       <div className="HomeProductName">{props.product.name}</div>
       <div className="HomeProductPrise">
         <div>${props.product.prise}</div>
