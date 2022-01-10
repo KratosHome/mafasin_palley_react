@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from "react";
-import "./HomeProductMain.css";
-import HomeProduct from "../../../components/ProductList/HomeProduct";
-import PostServer from "../../../API/PostServer";
-import axios from "axios";
+import React, { useEffect, useState } from "react";
+import PostServer from "../../API/PostServer";
+import HomeProduct from "../ProductList/HomeProduct";
+import "./HotDell.css";
 
-const HomeProductMain = ({ props }) => {
+const HotDell = () => {
   const [getProduct, setGetProduct] = useState([]);
 
   useEffect(() => {
@@ -12,17 +11,18 @@ const HomeProductMain = ({ props }) => {
   }, []);
 
   async function fetchProducts() {
-    const getProduct = await PostServer.HomePage();
+    const getProduct = await PostServer.HotDell();
     setGetProduct(getProduct);
   }
 
+  const HotDell = getProduct.map((test) => test.categories.indexOf("Hot Dell"));
+
   return (
     <div className="container bacground_home_product_main">
-      <div>{getProduct.name}</div>
       <div className="col-sx-12 col-sm-12 col-md-12 col-ld-12">
         <div className="home_product_container">
-          <h2>BEST SELLER</h2>
-          <div>Best Seller Product This Week!</div>
+          <h2>HOT DEAL</h2>
+          <div>Don't Miss Today's Featured Deals</div>
           <div className="home_product_list">
             {getProduct.map((product) => (
               <HomeProduct key={product.id} product={product} />
@@ -34,4 +34,4 @@ const HomeProductMain = ({ props }) => {
   );
 };
 
-export default HomeProductMain;
+export default HotDell;

@@ -5,8 +5,6 @@ import like from "./../../img/icons/like.png";
 import search from "./../../img/icons/search.png";
 
 const HomeProduct = (props) => {
-  console.log(props.product.img);
-
   return (
     <div className="HomeProduct">
       <img src={props.product.img} />

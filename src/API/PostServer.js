@@ -19,4 +19,18 @@ export default class PostServer {
     );
     return response.data;
   }
+  static async HotDell() {
+    const response = await axios.get(
+      "https://run.mocky.io/v3/1b637f82-0e08-4c21-974a-0526cf840727"
+    );
+    return response.data;
+  }
+  static async TestinoiaksHome() {
+    const response = await axios.get(
+      "https://run.mocky.io/v3/0b45bf4c-ea9a-4e43-9cd8-d0a905818988"
+    );
+    return response.data;
+  }
 }
+
+//

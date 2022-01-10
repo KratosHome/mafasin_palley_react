@@ -7,9 +7,9 @@ const BanerMain = () => {
       <div className="BanerMain_img">
         <div className="BanerMain_block">
           <h3 className="BanerMain_h3">POUCH WITH POCKET</h3>
-          <span className="BanerMain_text">
+          <div className="BanerMain_text">
             Forsake bulky cases without compromising protectiveness
-          </span>
+          </div>
           <button className="BanerMain_button">show now</button>
         </div>
       </div>

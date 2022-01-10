@@ -1,0 +1,18 @@
+.TestinoiaksHomeContainer {
+  max-height: 650px;
+  width: 100%;
+  background-color: black;
+}
+
+.TestinoiaksHomeImeage {
+  background-image: url(../../../img/baner/slide-3.jpeg);
+  background-size: 200%;
+  background-position: center;
+  height: 800px;
+  background-repeat: no-repeat;
+  margin-bottom: -150px;
+  background-attachment: fixed;
+  z-index: -10;
+  top: 0;
+  margin-top: 0px;
+}
