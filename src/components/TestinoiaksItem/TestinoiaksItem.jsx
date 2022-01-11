@@ -1,40 +1,18 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
-import slider1 from "../../img/baner/slide2.1.jpg";
-import slider2 from "../../img/baner/slide1.1.jpg";
-import slider3 from "../../img/baner/slide-3.jpeg";
+import React, { useState } from "react";
+import "./TestinoiaksItem.css";
+import test from "../../img/baner/slide-3.jpeg";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-export default class SimpleSlider extends Component {
-  render() {
-    const settings = {
-      infinite: true,
-      arrows: false,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: 2000,
-      fade: true,
-      pauseOnHover: false,
-    };
-    return (
-      <div>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          charset="UTF-8"
-          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
-        />
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-        />
-        <Slider {...settings}>
-          <img src={slider1} alt="slider1"></img>
-          <img src={slider2} alt="slider2"></img>
-          <img src={slider3} alt="slider3"></img>
-        </Slider>
-      </div>
-    );
-  }
-}
+const TestinoiaksItem = ({ reviews }) => {
+  return (
+    <div className="TestinoiaksItemContiner">
+      <div> {reviews.text}</div>
+      <div>{reviews.grade}</div>
+      <img className="vla" src={reviews.image}></img>
+      <div>{reviews.name}</div>
+      <div>{reviews.position}</div>
+    </div>
+  );
+};
+export default TestinoiaksItem;

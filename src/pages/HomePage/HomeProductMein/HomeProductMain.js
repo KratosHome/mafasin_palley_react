@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./HomeProductMain.css";
 import HomeProduct from "../../../components/ProductList/HomeProduct";
 import PostServer from "../../../API/PostServer";
-import axios from "axios";
 
 const HomeProductMain = ({ props }) => {
   const [getProduct, setGetProduct] = useState([]);

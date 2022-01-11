@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import PostServer from "../../../API/PostServer";
 import TestinoiaksItem from "../../../components/TestinoiaksItem/TestinoiaksItem";
 import "./TestinoiaksHome.css";
+import { Carousel } from "react-responsive-carousel";
 
 const TestinoiaksHome = () => {
   const [getTestinoiaksHome, setGetTestinoiaksHome] = useState([]);
@@ -15,13 +16,15 @@ const TestinoiaksHome = () => {
     setGetTestinoiaksHome(getTestinoiaksHome);
   }
 
-  console.log(getTestinoiaksHome);
   return (
     <div className="TestinoiaksHomeContainer">
       <div className="TestinoiaksHomeImeage">
-        {getTestinoiaksHome.map((reviews) => (
-          <TestinoiaksItem key={reviews.name} reviews={reviews} />
-        ))}
+        <h3>TESTIMONIALS</h3>
+        <Carousel>
+          {getTestinoiaksHome.map((reviews) => (
+            <TestinoiaksItem key={reviews.name} reviews={reviews} />
+          ))}
+        </Carousel>
       </div>
     </div>
   );
