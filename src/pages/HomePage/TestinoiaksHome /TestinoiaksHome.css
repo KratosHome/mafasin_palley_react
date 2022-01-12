@@ -2,6 +2,7 @@
   max-height: 650px;
   width: 100%;
   background-color: black;
+  text-align: center;
 }
 
 .TestinoiaksHomeImeage {
@@ -16,29 +17,24 @@
   top: 0;
   margin-top: 0px;
 }
-
-.slider {
-  position: relative;
-  width: 80%;
-  height: 500px;
-  margin: auto;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
+.TestinoiaksHomeH3 {
+  font-family: SofiaPro;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #111;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-top: 5%;
+}
+.slider-control-centerleft {
+  display: none;
+}
+.slider-control-centerright {
+  display: none;
 }
 
-.slider-img {
-  position: absolute;
-  width: 100%;
-  height: 500px;
-  transition: all 0.2s;
-}
-
-.slider-img-prev {
-  transform: translateX(-100%);
-}
-
-.slider-img-next {
-  transform: translateX(100%);
+.paging-item {
+  margin-bottom: -200px;
+  padding-top: 100px;
 }

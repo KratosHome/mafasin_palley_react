@@ -180,4 +180,32 @@ TestinoiaksHome
 	}
 ]
 
+
+Instagram 
+[
+	{
+		"image":"/img/instagrem/instagram1.jpeg",
+		"link":"http://instagram.com"
+	},
+	{
+		"image":"/img/instagrem/instagram2.jpeg",
+		"link":"http://instagram.com"
+	},
+		{
+		"image":"/img/instagrem/instagram3.jpeg",
+		"link":"http://instagram.com"
+	},
+		{
+		"image":"/img/instagrem/instagram4.jpeg",
+		"link":"http://instagram.com"
+	},
+		{
+		"image":"/img/instagrem/instagram5.jpeg",
+		"link":"http://instagram.com"
+	},
+		{
+		"image":"/img/instagrem/instagram6.jpeg",
+		"link":"http://instagram.com"
+	}
+] 
  */

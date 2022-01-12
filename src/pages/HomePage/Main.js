@@ -18,7 +18,6 @@ const Main = () => {
       <HotDell />
       <TestinoiaksHome />
       <Instagrame />
-      <TestSlider />
     </>
   );
 };
