@@ -5,9 +5,6 @@ import BanerMain from "./BanerMain/BanerMain";
 import HotDell from "../../components/HotDell/HotDell";
 import TestinoiaksHome from "./TestinoiaksHome /TestinoiaksHome";
 import Instagrame from "./Instagrame/Instagrame";
-import TestinoiaksSlider from "../../components/TestinoiaksSlider/TestinoiaksSlider";
-import TestinoiaksItem from "../../components/TestinoiaksItem/TestinoiaksItem";
-import TestSlider from "./testSlider/TestSlide";
 
 const Main = () => {
   return (

@@ -184,26 +184,32 @@ TestinoiaksHome
 Instagram 
 [
 	{
+		"id": 1,
 		"image":"/img/instagrem/instagram1.jpeg",
 		"link":"http://instagram.com"
 	},
 	{
+		"id": 2,
 		"image":"/img/instagrem/instagram2.jpeg",
 		"link":"http://instagram.com"
 	},
 		{
+		"id": 3,
 		"image":"/img/instagrem/instagram3.jpeg",
 		"link":"http://instagram.com"
 	},
 		{
+		"id": 4,
 		"image":"/img/instagrem/instagram4.jpeg",
 		"link":"http://instagram.com"
 	},
 		{
+		"id": 5,
 		"image":"/img/instagrem/instagram5.jpeg",
 		"link":"http://instagram.com"
 	},
 		{
+		"id": 6,
 		"image":"/img/instagrem/instagram6.jpeg",
 		"link":"http://instagram.com"
 	}

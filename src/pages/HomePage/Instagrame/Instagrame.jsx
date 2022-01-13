@@ -18,8 +18,9 @@ const Instagrame = () => {
   }
   const responsive = {
     0: { items: 1 },
-    1: { items: 2 },
-    2: { items: 3 },
+    2: { items: 2 },
+    3: { items: 3 },
+    4: { items: 4 },
   };
   return (
     <div className="InstagramePage">
@@ -29,19 +30,17 @@ const Instagrame = () => {
           responsive={responsive}
           controlsStrategy="alternate"
           autoPlay={true}
-          autoPlayInterval={2000}
+          autoPlayInterval={3000}
           infinite={true}
           keyboardNavigation={true}
           mouseTracking={true}
           disableButtonsControls={true}
           disableDotsControls={true}
-          items={4}
           paddingLeft={50}
-          paddingRight={50}
-          responsive={5}
+          paddingRight={70}
         >
           {getInstagrame.map((inst) => (
-            <InstagramItem inst={inst} />
+            <InstagramItem key={inst.id} inst={inst} />
           ))}
         </AliceCarousel>
       </div>

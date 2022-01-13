@@ -33,7 +33,7 @@ export default class PostServer {
   }
   static async Instagram() {
     const response = await axios.get(
-      "https://run.mocky.io/v3/ef164b2e-67f1-4726-999d-c6e0d4174851"
+      "https://run.mocky.io/v3/fe3eefe4-690e-4418-a889-09e72cb526b7"
     );
     return response.data;
   }

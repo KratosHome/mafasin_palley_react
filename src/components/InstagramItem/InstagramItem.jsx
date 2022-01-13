@@ -5,7 +5,11 @@ const InstagramItem = ({ inst }) => {
   return (
     <>
       <div>
-        <img className="InstagramItemImg" src={inst.image}></img>
+        <img
+          data-value={inst.id}
+          className="InstagramItemImg item"
+          src={inst.image}
+        ></img>
       </div>
     </>
   );
