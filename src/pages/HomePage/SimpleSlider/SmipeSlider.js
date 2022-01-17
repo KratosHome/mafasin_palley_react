@@ -4,6 +4,7 @@ import slider1 from "../../../img/baner/slide2.1.jpg";
 import slider2 from "../../../img/baner/slide1.1.jpg";
 import slider3 from "../../../img/baner/slide-3.jpeg";
 import SliderTitel from "../../../components/SliderTatel/SliderTitel";
+import "./SwaipSlider.css";
 
 export default class SimpleSlider extends Component {
   render() {
@@ -31,9 +32,9 @@ export default class SimpleSlider extends Component {
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
         <Slider {...settings}>
-          <img src={slider1} alt="slider1"></img>
-          <img src={slider2} alt="slider2"></img>
-          <img src={slider3} alt="slider3"></img>
+          <img className="SwaipSlider" src={slider1} alt="slider1"></img>
+          <img className="SwaipSlider" src={slider2} alt="slider2"></img>
+          <img className="SwaipSlider" src={slider3} alt="slider3"></img>
         </Slider>
         <SliderTitel />
       </div>

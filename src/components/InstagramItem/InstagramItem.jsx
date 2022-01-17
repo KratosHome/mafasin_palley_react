@@ -4,12 +4,14 @@ import "./InstagramItem.css";
 const InstagramItem = ({ inst }) => {
   return (
     <>
-      <div>
+      <div className="HoverImg">
         <img
           data-value={inst.id}
           className="InstagramItemImg item"
           src={inst.image}
-        ></img>
+        />
+        <div className="HoverImgTwo"></div>
+        <div className="HoverImgThre"></div>
       </div>
     </>
   );

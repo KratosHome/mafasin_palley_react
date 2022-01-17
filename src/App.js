@@ -3,6 +3,7 @@ import "./components/Body/body.css";
 import AppRouters from "./components/AppRouter";
 import Header from "./components/Header/Header";
 import { BrowserRouter } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [isAuth, setIsAuth] = useState(false);
@@ -12,6 +13,7 @@ function App() {
     <BrowserRouter>
       <Header />
       <AppRouters />
+      <Footer />
     </BrowserRouter>
   );
 }
