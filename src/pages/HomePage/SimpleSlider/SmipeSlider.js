@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import Slider from "react-slick";
 import slider1 from "../../../img/baner/slide2.1.jpg";
 import slider2 from "../../../img/baner/slide1.1.jpg";
@@ -19,25 +19,24 @@ export default class SimpleSlider extends Component {
       pauseOnHover: false,
     };
     return (
-      <div>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          charset="UTF-8"
-          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
-        />
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-        />
-        <Slider {...settings}>
-          <img className="SwaipSlider" src={slider1} alt="slider1"></img>
-          <img className="SwaipSlider" src={slider2} alt="slider2"></img>
-          <img className="SwaipSlider" src={slider3} alt="slider3"></img>
-        </Slider>
-        <SliderTitel />
-      </div>
+        <div className="SwipeSliderHeader">
+            <link
+                rel="stylesheet"
+                type="text/css"
+                href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+            />
+            <link
+                rel="stylesheet"
+                type="text/css"
+                href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+            />
+            <Slider {...settings}>
+                <img className="SwaipSlider" src={slider1} alt="slider1"/>
+                <img className="SwaipSlider" src={slider2} alt="slider2"/>
+                <img className="SwaipSlider" src={slider3} alt="slider3"/>
+            </Slider>
+            <SliderTitel/>
+        </div>
     );
   }
 }

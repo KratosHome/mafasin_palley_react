@@ -1,17 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, {useEffect, useState} from "react";
 import "./HomeProductMain.css";
-import HomeProduct from "../../../components/ProductList/HomeProduct";
 import PostServer from "../../../API/PostServer";
+import Loader from "../../../components/UL/Loader/Loader";
+import ProductList from "../../../components/ProductList/ProductList";
 
-const HomeProductMain = ({ props }) => {
-  const [getProduct, setGetProduct] = useState([]);
+const HomeProductMain=() => {
+  const [getProduct, setGetProduct]=useState([]);
 
   useEffect(() => {
     fetchProducts();
   }, []);
 
   async function fetchProducts() {
-    const getProduct = await PostServer.HomePage();
+    const getProduct=await PostServer.HomePage();
     setGetProduct(getProduct);
   }
 
@@ -22,11 +23,15 @@ const HomeProductMain = ({ props }) => {
         <div className="home_product_container">
           <h2>BEST SELLER</h2>
           <div>Best Seller Product This Week!</div>
-          <div className="home_product_list">
-            {getProduct.map((product) => (
-              <HomeProduct key={product.id} product={product} />
-            ))}
-          </div>
+          {getProduct.length ? (
+              <div className="home_product_list">
+                {getProduct.map((product) => (
+                    <ProductList key={product.id} product={product}/>
+                ))}
+              </div>
+          ) : (
+              <Loader/>
+          )}
         </div>
       </div>
     </div>

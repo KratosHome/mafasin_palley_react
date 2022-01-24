@@ -12,9 +12,9 @@
   display: flex;
   justify-content: center;
 }
+
 .HomeProductPrise :first-child {
   margin-right: 5px;
-  font-family: SofiaPro;
   font-size: 15px;
   font-weight: 700;
   color: #979797;
@@ -22,7 +22,6 @@
 }
 
 .HomeProductPrise :last-child {
-  font-family: SofiaPro;
   font-size: 15px;
   font-weight: 700;
   color: #2dbbf0;

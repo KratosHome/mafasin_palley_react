@@ -1,41 +1,48 @@
 header {
-    margin: 25px 0px 0px 15px;
+  top: 0;
+  padding: 25px 0 0 0;
+  margin: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1000;
+  position: sticky;
 }
 
 .logo {
-    height: 40px;
-    width: 140px;
+  height: 40px;
+  width: 140px;
+  padding-left: 15px;
 }
 
 .navigator {
-    display: flex;
-    justify-content: flex-end;
-    margin: 15px 0px 0px 15px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px 0 0 15px;
 }
 
-.search img, .personal_area img, .likes img, .cart img {
-    width: 25px;
-    height: 25px;
-    margin: 0px 10px 0px 0px;
+.search img,
+.personal_area img,
+.likes img,
+.cart img {
+  width: 25px;
+  height: 25px;
+  margin: 0 10px 0 0;
 }
-
 
 @media (max-width: 768px) {
-    .logo {
-        margin-top: -5px;
-        margin-bottom: 10px;
-        display: block;
-    }
+  .logo {
+    margin-top: -5px;
+    margin-bottom: 10px;
+    display: block;
+  }
 
-    .test {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-direction: column;
-    }
+  .test {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 
-    .navigator {
-        margin-top: -5px;
-    }
-
+  .navigator {
+    margin-top: -5px;
+  }
 }
