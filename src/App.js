@@ -4,17 +4,18 @@ import AppRouters from "./components/AppRouter";
 import Header from "./components/Header/Header";
 import { BrowserRouter } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
+import { AuthContext } from "./components/contecst/contecst";
+import PostServer from "./API/PostServer";
 
 function App() {
-  const [isAuth, setIsAuth] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
-
   return (
-    <BrowserRouter>
-      <Header />
-      <AppRouters />
-      <Footer />
-    </BrowserRouter>
+    <AuthContext.Provider>
+      <BrowserRouter>
+        <Header />
+        <AppRouters />
+        <Footer />
+      </BrowserRouter>
+    </AuthContext.Provider>
   );
 }
 
