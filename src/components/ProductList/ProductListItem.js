@@ -12,7 +12,9 @@ New test products
 	  "count": ["40"],
 	  "size": [],
 	  "color": [],
+	  "grade": 5,
 	  "categories": ["Home Page","Oll Pages"]
+
 	},
 		{
 	  "id": 2,
@@ -24,6 +26,7 @@ New test products
 		"count": ["30"],
 	  "size": ["M"],
 	  "color": ["Green","Read"],
+	  "grade": 3,
 	  "categories": ["Home Page","Oll Pages", "Hot deal"]
 	},
 		{
@@ -36,6 +39,7 @@ New test products
 	  "count": ["20"],
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
+	  "grade": 5,
 	  "categories": ["Home Page","Oll Pages", "Best seller", "Hot deal"]
 	},
 	{
@@ -48,6 +52,7 @@ New test products
 	  "count": ["20"],
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
+	  "grade": 3,
 	  "categories": ["Home Page","Oll Pages", "Best seller", "Hot deal"]
 	},
 				{
@@ -60,6 +65,7 @@ New test products
 	  "count": ["20"],
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
+	  "grade": 1,
 	  "categories": ["Home Page","Oll Pages", "Best seller"]
 	},
 	{
@@ -72,6 +78,7 @@ New test products
 	  "count": ["20"],
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
+	  "grade": 2,
 	  "categories": ["Home Page","Oll Pages", "Best seller", "Hot deal", "New"]
 	},
 	{
@@ -84,6 +91,7 @@ New test products
 	  "count": ["20"],
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
+	  "grade": 5,
 	  "categories": ["Home Page","Oll Pages", "Best seller", "New"]
 	},
 	{
@@ -96,6 +104,7 @@ New test products
 	  "count": ["20"],
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
+	 "grade": 4,
 	  "categories": ["Home Page","Oll Pages", "Hot deal", "New"]
 	},
 	{
@@ -108,6 +117,7 @@ New test products
 	  "count": ["20"],
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
+	  "grade": 5,
 	  "categories": ["Oll Pages", "Best seller", "New"]
 	},
 	{
@@ -120,6 +130,7 @@ New test products
 	  "count": ["20"],
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
+	  "grade": 5,
 	  "categories": ["Oll Pages", "Best seller"]
 	},
 	{
@@ -132,6 +143,7 @@ New test products
 	  "count": ["20"],
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
+	  "grade": 0,
 	  "categories": ["Oll Pages", "Best seller"]
 	},
 	{
@@ -144,6 +156,7 @@ New test products
 	  "count": ["20"],
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
+	  "grade": 0,
 	  "categories": ["Oll Pages", "Hot deal", "New"]
 	}
 ]

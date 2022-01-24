@@ -3,6 +3,7 @@ import {useParams} from "react-router-dom";
 import PostServer from "../../API/PostServer";
 import "./ProductPage.css";
 import ProductPageItems from "./ProductPageItems";
+import Loader from "../../components/UL/Loader/Loader";
 
 const ProductPage=() => {
   const [getProduct, setGetProduct]=useState([]);
@@ -22,11 +23,16 @@ const ProductPage=() => {
   );
 
   return (
-      <div>
-        {getProductInProduct.map((product) => (
-            <ProductPageItems key={product.id} product={product}/>
-        ))}
-      </div>
+      <>
+        {
+          getProductInProduct.length ? <div>
+                {getProductInProduct.map((product) => (
+                    <ProductPageItems key={product.id} product={product}/>
+                ))}
+              </div> :
+              <Loader/>
+        }
+      </>
   );
 };
 

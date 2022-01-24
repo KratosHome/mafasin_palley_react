@@ -1,10 +1,61 @@
-@import url('http://fonts.cdnfonts.com/css/sofia-pro?styles=17636,17637,17630,17640,17631,17641,17632,17633,17634,17635,17638,17639,17628,17629,17626,17627');
-html{
+@font-face {
+    font-family: 'MyFont';
+    src: local('MyFont'), url(./../../components/sofia-pro-cdnfonts/Sofia Pro Regular Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont1';
+    src: local('MyFont'), url(./../../components/sofia-pro-cdnfonts/Sofia Pro Black Italic Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont2';
+    src: local('MyFont'), url(./../../components/sofia-pro-cdnfonts/Sofia Pro Black Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont3';
+    src: local('MyFont'), url(./../../components/sofia-pro-cdnfonts/Sofia Pro ExtraLight Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont4';
+    src: local('MyFont'), url(./../../components/sofia-pro-cdnfonts/Sofia Pro Light Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont5';
+    src: local('MyFont'), url(./../../components/sofia-pro-cdnfonts/Sofia Pro Regular Italic Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont6';
+    src: local('MyFont'), url(./../../components/sofia-pro-cdnfonts/Sofia Pro Semi Bold Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont7';
+    src: local('MyFont'), url(./../../components/sofia-pro-cdnfonts/Sofia Pro Semi Bold Italic Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont8';
+    src: local('MyFont'), url(./../../components/sofia-pro-cdnfonts/Sofia Pro UltraLight Az.otf) format('woff');
+}
+
+@font-face {
+    font-family: 'MyFont9';
+    src: local('MyFont'), url(./../../components/sofia-pro-cdnfonts/Sofia Pro UltraLight Italic Az.otf) format('woff');
+}
+
+html {
     font-size: 16px;
 }
+
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
 }

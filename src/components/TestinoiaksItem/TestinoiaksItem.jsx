@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import "./TestinoiaksItem.css";
-import test from "../../img/baner/slide-3.jpeg";
-import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { MdGrade, MdOutlineGrade } from "react-icons/md";
+import {MdOutlineGrade} from "react-icons/md";
 
 const TestinoiaksItem = ({ reviews }) => {
+    console.log(reviews)
   return (
     <div className="TestinoiaksItemContiner">
       <div className="TestinoiaksItemText">{reviews.text}</div>

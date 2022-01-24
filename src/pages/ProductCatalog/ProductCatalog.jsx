@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react";
 import PostServer from "../../API/PostServer";
 import ProductList from "../../components/ProductList/ProductList";
 import "./ProductCatalog.css";
+import Loader from "../../components/UL/Loader/Loader";
 
 const ProductCatalog=() => {
   const [getProduct, setGetProduct]=useState([]);
@@ -23,11 +24,14 @@ const ProductCatalog=() => {
               <div className="home_product_container">
                 <h2>Products Pag</h2>
                 <div>Don't Miss Today's Featured Deals</div>
-                <div className="home_product_list">
-                  {getProduct.map((product) => (
-                      <ProductList product={product}/>
-                  ))}
-                </div>
+                {
+                  getProduct.length ? <div className="home_product_list">
+                    {getProduct.map((product) => (
+                        <ProductList product={product}/>
+                    ))}
+                  </div> : <Loader/>
+                }
+
               </div>
             </div>
           </div>

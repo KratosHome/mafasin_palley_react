@@ -2,6 +2,11 @@
   width: 300px;
   height: 300px;
 }
+
+.HomeProductLink {
+  text-decoration: none;
+}
+
 .HomeProductName {
   margin-top: 10px;
   color: #111;
@@ -18,7 +23,6 @@
   font-size: 15px;
   font-weight: 700;
   color: #979797;
-  text-decoration: line-through;
 }
 
 .HomeProductPrise :last-child {

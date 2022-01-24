@@ -1,3 +1,62 @@
+.ProductPageItems {
+    font-family: MyFont4;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 10px 0 0;
+}
+
 .ProductImage {
     max-width: 100%;
+}
+
+.ProductPageName {
+    font-family: MyFont;
+    font-size: 24px;
+    font-weight: 500;
+    color: #111;
+    text-transform: capitalize;
+    padding-right: 40px;
+    margin-bottom: 20px;
+}
+
+.ProductPageContainerPrise {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.ProductPageNameNewPrise {
+    color: #83868c;
+    text-decoration: line-through;
+    margin-right: 20px;
+}
+
+.ProductPageNamePrise {
+    color: #2dbbf0;
+    font-size: 18px;
+}
+
+.ProductPageContainerLikes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addToWidhListBordeer {
+    position: relative;
+    border: 1px solid rgba(191, 175, 175, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+
+}
+
+.addToWidhList {
+    position: absolute;
+    font-size: 18px;
+    top: 30%;
+    right: 25%;
+}
+
+.addToWidhListBordeer:hover .addToWidhList {
+    color: #2dbbf0;
+    cursor: pointer;
 }
