@@ -5,15 +5,17 @@ import Header from "./components/Header/Header";
 import {BrowserRouter} from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import {AuthContext} from "./components/contecst/contecst";
+import ScrollToTop from "./components/UL/ScrolToTop/SkrolTotTp";
 
 function App() {
   return (
     <AuthContext.Provider>
-      <BrowserRouter>
-        <Header />
-        <AppRouters />
-        <Footer />
-      </BrowserRouter>
+        <BrowserRouter>
+            <ScrollToTop/>
+            <Header/>
+            <AppRouters/>
+            <Footer/>
+        </BrowserRouter>
     </AuthContext.Provider>
   );
 }

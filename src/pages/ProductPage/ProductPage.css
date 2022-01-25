@@ -46,7 +46,6 @@
     border-radius: 50%;
     width: 40px;
     height: 40px;
-
 }
 
 .addToWidhList {
@@ -59,4 +58,52 @@
 .addToWidhListBordeer:hover .addToWidhList {
     color: #2dbbf0;
     cursor: pointer;
+}
+
+.ProductPageDiscription {
+    font-family: MyFont3;
+    font-size: 15px;
+    color: #969696;
+    line-height: 1.6;
+    font-weight: 400;
+    padding: 22px 0 0;
+    margin-bottom: 30px;
+}
+
+.ProductPageDiscription::before {
+    position: absolute;
+    content: "";
+    background-color: #969696;
+    width: 47%;
+    height: 1px;
+    opacity: 0.5;
+    margin-top: -30px;
+}
+
+.ProductPageSoldLast {
+    font-family: MyFont6;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #111;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.ProductPageSoldLast span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2dbbf0;
+}
+
+.SoldInTwelveHours {
+    padding-top: 13px;
+    font-size: 15px;
+    color: #f55;
+    font-weight: 600;
+    letter-spacing: .1em;
+    padding-left: 35px;
+    background: url(../../img/icons/fire.svg) top left no-repeat;
+    background-size: 25px;
+    height: 30px;
+    margin-bottom: 15px;
 }

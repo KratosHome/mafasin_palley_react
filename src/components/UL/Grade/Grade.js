@@ -1,39 +1,42 @@
 import React from 'react';
+import "./Grade.css"
 import {MdOutlineGrade} from "react-icons/md";
 
-const Grade=(product) => {
+const Grade=(props) => {
 
     return (
-        <div>
-            {+product.grade === 1 ? (
-                <MdOutlineGrade/>
-            ) : +product.grade === 2 ? (
-                <div>
+        <div className="TestinoiaksItemGrade">
+            {+props.props.grade === 0 ?
+                <p>No reviews</p> :
+                +props.props.grade === 1 ? (
                     <MdOutlineGrade/>
-                    <MdOutlineGrade/>
-                </div>
-            ) : +product.grade === 3 ? (
-                <div>
-                    <MdOutlineGrade/>
-                    <MdOutlineGrade/>
-                    <MdOutlineGrade/>
-                </div>
-            ) : +product.grade === 4 ? (
-                <div>
-                    <MdOutlineGrade/>
-                    <MdOutlineGrade/>
-                    <MdOutlineGrade/>
-                    <MdOutlineGrade/>
-                </div>
-            ) : +product.grade === 5 ? (
-                <div>
-                    <MdOutlineGrade/>
-                    <MdOutlineGrade/>
-                    <MdOutlineGrade/>
-                    <MdOutlineGrade/>
-                    <MdOutlineGrade/>
-                </div>
-            ) : null}
+                ) : +props.props.grade === 2 ? (
+                    <div>
+                        <MdOutlineGrade/>
+                        <MdOutlineGrade/>
+                    </div>
+                ) : +props.props.grade === 3 ? (
+                    <div>
+                        <MdOutlineGrade/>
+                        <MdOutlineGrade/>
+                        <MdOutlineGrade/>
+                    </div>
+                ) : +props.props.grade === 4 ? (
+                    <div>
+                        <MdOutlineGrade/>
+                        <MdOutlineGrade/>
+                        <MdOutlineGrade/>
+                        <MdOutlineGrade/>
+                    </div>
+                ) : +props.props.grade === 5 ? (
+                    <div>
+                        <MdOutlineGrade/>
+                        <MdOutlineGrade/>
+                        <MdOutlineGrade/>
+                        <MdOutlineGrade/>
+                        <MdOutlineGrade/>
+                    </div>
+                ) : null}
         </div>
     );
 };

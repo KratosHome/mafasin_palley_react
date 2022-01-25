@@ -13,6 +13,8 @@ New test products
 	  "size": [],
 	  "color": [],
 	  "grade": 5,
+	  "remainder": 30,
+	  "SoldInTwelveHours": 12,
 	  "categories": ["Home Page","Oll Pages"]
 
 	},
@@ -27,6 +29,8 @@ New test products
 	  "size": ["M"],
 	  "color": ["Green","Read"],
 	  "grade": 3,
+	  "remainder": 20,
+	  "SoldInTwelveHours": 5,
 	  "categories": ["Home Page","Oll Pages", "Hot deal"]
 	},
 		{
@@ -40,6 +44,8 @@ New test products
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
 	  "grade": 5,
+	  "remainder": 10,
+	  "SoldInTwelveHours": 22,
 	  "categories": ["Home Page","Oll Pages", "Best seller", "Hot deal"]
 	},
 	{
@@ -53,6 +59,8 @@ New test products
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
 	  "grade": 3,
+	  "remainder": 50,
+	  "SoldInTwelveHours": 20,
 	  "categories": ["Home Page","Oll Pages", "Best seller", "Hot deal"]
 	},
 				{
@@ -66,6 +74,8 @@ New test products
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
 	  "grade": 1,
+	  "remainder": 100,
+	   "SoldInTwelveHours": 37,
 	  "categories": ["Home Page","Oll Pages", "Best seller"]
 	},
 	{
@@ -79,6 +89,8 @@ New test products
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
 	  "grade": 2,
+	  "remainder": 850,
+	  "SoldInTwelveHours": 12,
 	  "categories": ["Home Page","Oll Pages", "Best seller", "Hot deal", "New"]
 	},
 	{
@@ -92,6 +104,8 @@ New test products
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
 	  "grade": 5,
+	  "remainder": 3,
+	   "SoldInTwelveHours": 25,
 	  "categories": ["Home Page","Oll Pages", "Best seller", "New"]
 	},
 	{
@@ -105,6 +119,8 @@ New test products
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
 	 "grade": 4,
+	 "remainder": 0,
+	  "SoldInTwelveHours": 0,
 	  "categories": ["Home Page","Oll Pages", "Hot deal", "New"]
 	},
 	{
@@ -118,6 +134,8 @@ New test products
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
 	  "grade": 5,
+	  "remainder": 44,
+	   "SoldInTwelveHours": 0,
 	  "categories": ["Oll Pages", "Best seller", "New"]
 	},
 	{
@@ -131,6 +149,8 @@ New test products
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
 	  "grade": 5,
+	  "remainder": 29,
+	   "SoldInTwelveHours": 1,
 	  "categories": ["Oll Pages", "Best seller"]
 	},
 	{
@@ -144,6 +164,8 @@ New test products
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
 	  "grade": 0,
+	  "remainder": 0,
+	   "SoldInTwelveHours": 45,
 	  "categories": ["Oll Pages", "Best seller"]
 	},
 	{
@@ -157,6 +179,8 @@ New test products
 	  "size": ["XL", "L", "M"],
 	  "color": ["Green","Read"],
 	  "grade": 0,
+	  "remainder": 30,
+	   "SoldInTwelveHours": 12,
 	  "categories": ["Oll Pages", "Hot deal", "New"]
 	}
 ]
