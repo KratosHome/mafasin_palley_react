@@ -1,0 +1,49 @@
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.barContainer {
+    flex: 1;
+    height: 12px;
+    background: #dfdfe7;
+
+    overflow: hidden; /* Crucial part */
+}
+
+.textValue {
+    margin-left: 8px;
+    width: 42px;
+    text-align: right;
+}
+
+.fillerBackground {
+    height: inherit;
+    transition: "width 2s ease-i-out";
+    background-color: #de3618;
+    animation: background 50s infinite alternate;
+}
+
+.filler {
+    transition: "width 2s ease-i-out";
+    height: inherit;
+    border-radius: inherit;
+    overflow: hidden;
+}
+
+@keyframes background {
+    0% {
+        background-image: linear-gradient(
+                45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+        background-size: 1rem 1rem;
+        background-position: 100% 100%;
+    }
+    100% {
+        background-image: linear-gradient(
+                45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+        background-size: 1rem 1rem;
+
+    }
+}

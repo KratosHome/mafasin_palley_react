@@ -1,0 +1,28 @@
+.ProductSizeName,
+.ProductSizeNameActiv {
+    display: inline-block;
+    min-width: unset;
+    height: unset;
+    line-height: unset;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    color: #000;
+    margin: -33px 10px 10px 10px;
+    text-align: center;
+    transition: all .3s ease;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .2;
+}
+
+.ProductSizeName:hover {
+    border: 1px solid #000;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ProductSizeNameActiv {
+    border: 1px solid #000;
+    opacity: 1;
+    cursor: pointer;
+}

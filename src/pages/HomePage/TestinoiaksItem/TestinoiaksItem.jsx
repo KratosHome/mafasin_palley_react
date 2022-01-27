@@ -1,7 +1,7 @@
 import React from "react";
 import "./TestinoiaksItem.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Grade from "../UL/Grade/Grade";
+import Grade from "./../../../components/UL/Grade/Grade";
 
 const TestinoiaksItem = ({ reviews }) => {
 
