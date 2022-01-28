@@ -4,6 +4,7 @@ import HotDell from "../HomePage/HotDell/HotDell";
 import Grade from "../../components/UL/Grade/Grade";
 import ProgresBar from "../../components/UL/ProgresBar/ProgresBar";
 import SizeKlic from "../../components/UL/SizeKlik/SizeKlic";
+import ProductColor from "../../components/UL/ProductColor/ProductColorr";
 
 
 const ProductPageItems=({product}) => {
@@ -55,9 +56,11 @@ const ProductPageItems=({product}) => {
                         )}
                     </div>
                     <span className="ProductSizeSize">COLOR</span>
-
-                    <div>{product.color}</div>
-                    <div>{product.color}</div>
+                    <div className="ProductSize">
+                        {product.color.map(color =>
+                            <ProductColor key={color} color={color}/>
+                        )}
+                    </div>
                     <div>выбор</div>
                     <button>add to cart</button>
                     <button>buy it now</button>

@@ -1,0 +1,35 @@
+.Activ,
+.ActivFitsShild1,
+.noActiv {
+    width: 30px;
+    height: 30px;
+    border: 0.2 solid black;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.Activ {
+    border: 2px solid black;
+}
+
+
+.ActivFitsShild:first-child {
+    border: 2px solid black;
+}
+
+.NoActivFitsShild:first-child {
+    border: 0.2 solid black;
+}
+
+.ActivFitsShild1:nth-child(+n+2) {
+    border: 2px solid black;
+}
+
+
+.Green {
+    background-color: green;
+}
+
+.Read {
+    background-color: red;
+}
