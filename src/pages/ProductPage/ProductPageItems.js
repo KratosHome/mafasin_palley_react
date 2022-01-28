@@ -54,6 +54,9 @@ const ProductPageItems=({product}) => {
                             <SizeKlic key={size} size={size}/>
                         )}
                     </div>
+                    <span className="ProductSizeSize">COLOR</span>
+
+                    <div>{product.color}</div>
                     <div>{product.color}</div>
                     <div>выбор</div>
                     <button>add to cart</button>

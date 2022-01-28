@@ -1,4 +1,6 @@
 .ProductSizeName,
+.ProductSizeNameActivFirst,
+.ProductSizeNameAnActib,
 .ProductSizeNameActiv {
     display: inline-block;
     min-width: unset;
@@ -21,8 +23,19 @@
     cursor: pointer;
 }
 
-.ProductSizeNameActiv {
+.ProductSizeNameActiv:nth-child(+n+2) {
     border: 1px solid #000;
     opacity: 1;
     cursor: pointer;
+}
+
+.ProductSizeNameActivFirst:first-child {
+    border: 1px solid #000;
+    opacity: 1;
+    cursor: pointer;
+}
+
+ProductSizeNameAnActib:first-child {
+    border: 0px;
+    opacity: .2;
 }
