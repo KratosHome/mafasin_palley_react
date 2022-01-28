@@ -49,18 +49,33 @@ const ProductPageItems=({product}) => {
                         <div>Delivery & Return</div>
                         <div>Ask a Question</div>
                     </div>
-                    <span className="ProductSizeSize">SIZE</span>
-                    <div className="ProductSize">
-                        {product.size.map(size =>
-                            <SizeKlic key={size} size={size}/>
-                        )}
-                    </div>
-                    <span className="ProductSizeSize">COLOR</span>
-                    <div className="ProductSize">
-                        {product.color.map(color =>
-                            <ProductColor key={color} color={color}/>
-                        )}
-                    </div>
+                    {
+                        product.size.length > 1 ?
+                            <>
+                                <span className="ProductSizeSize">SIZE</span>
+                                <div className="ProductSize">
+                                    {product.size.map(size =>
+                                        <SizeKlic key={size} size={size}/>
+                                    )}
+                                </div>
+                            </>
+                            :
+                            null
+                    }
+                    {
+                        product.color.length > 1 ?
+                            <>
+                                <span className="ProductSizeSize">COLOR</span>
+                                <div className="ProductSize">
+                                    {product.color.map(color =>
+                                        <ProductColor key={color} color={color}/>
+                                    )}
+                                </div>
+                            </>
+                            :
+                            null
+                    }
+
                     <div>выбор</div>
                     <button>add to cart</button>
                     <button>buy it now</button>
