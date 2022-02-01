@@ -7,6 +7,7 @@ import SizeKlic from "../../components/UL/SizeKlik/SizeKlic";
 import ProductColor from "../../components/UL/ProductColor/ProductColorr";
 import ProductCount from "../../components/UL/ProductCount/ProductCount";
 import ButtonAddToCart from "../../components/UL/ButtonAddToCart/ButtonAddToCart";
+import BayItNow from "../../components/UL/BayItNow/BayItNow";
 
 const ProductPageItems = ({ product }) => {
   const [count, setCount] = useState(1);
@@ -86,15 +87,17 @@ const ProductPageItems = ({ product }) => {
           <div>
             {product.remainder > 1 ? (
               <>
-                <ProductCount
-                  count={count}
-                  maxCount={product.remainder}
-                  minCount={minCount}
-                  ProductIncriment={ProductIncriment}
-                  ProducttDecrement={ProducttDecrement}
-                />
-                <ButtonAddToCart id={product.id} count={count} />
-                <button>buy it now</button>
+                <div className="ProdCounBTN">
+                  <ProductCount
+                    count={count}
+                    maxCount={product.remainder}
+                    minCount={minCount}
+                    ProductIncriment={ProductIncriment}
+                    ProducttDecrement={ProducttDecrement}
+                  />
+                  <ButtonAddToCart id={product.id} count={count} />
+                </div>
+                <BayItNow />
               </>
             ) : (
               <>
@@ -103,8 +106,9 @@ const ProductPageItems = ({ product }) => {
               </>
             )}
           </div>
-
-          <div>Categories :{product.categories}</div>
+          <div className="ProductCategori">
+            Categories: {product.categories}
+          </div>
         </div>
       </div>
       <div className="col-sx-12 col-sm-12 col-md-12 col-ld-12">

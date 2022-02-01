@@ -145,3 +145,19 @@
 .NotAvailable {
   color: black;
 }
+.ProdCounBTN {
+  display: flex;
+}
+.ProductCategori {
+  margin-top: 30px;
+  position: relative;
+}
+.ProductCategori::before {
+  position: absolute;
+  content: "";
+  background-color: #969696;
+  width: 100%;
+  height: 1px;
+  opacity: 0.5;
+  margin-top: -15px;
+}

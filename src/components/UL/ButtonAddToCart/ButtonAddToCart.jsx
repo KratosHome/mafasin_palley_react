@@ -5,7 +5,12 @@ import "./ButtonAddToCart.css";
 const ButtonAddToCart = ({ id, count, addProductToCard }) => {
   return (
     <>
-      <button onClick={() => addProductToCard(id, count)}>add to cart</button>
+      <button
+        className="buttonAddProductToCard"
+        onClick={() => addProductToCard(id, count)}
+      >
+        add to cart
+      </button>
     </>
   );
 };
