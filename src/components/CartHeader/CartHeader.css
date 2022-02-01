@@ -1,0 +1,12 @@
+.cart {
+  position: relative;
+}
+.AddProductToHeaderCard {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  background: #2dbbf0;
+  right: 10px;
+  top: 19px;
+}

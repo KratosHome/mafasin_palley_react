@@ -51,10 +51,11 @@ const ProductPageItems = ({ product }) => {
           <Grade props={product} />
           <div className="ProductPageDiscription">{product.discription}</div>
           <div className="ProductPageSoldLast">
-            <span>{product.remainder}</span> sold in last <span>20</span> Hour
+            <span>{product.SoldInTwelveHours}</span> sold in last{" "}
+            <span>20</span> Hour
           </div>
           <div className="SoldInTwelveHours">
-            HURRY! ONLY <span>{product.SoldInTwelveHours}</span>LEFT IN STOCK
+            HURRY! ONLY <span>{product.remainder}</span>LEFT IN STOCK
           </div>
           <ProgresBar valuePercentage={calkProgreesBar()} />
           <div className="ProductPageContainerModal">
@@ -92,7 +93,7 @@ const ProductPageItems = ({ product }) => {
                   ProductIncriment={ProductIncriment}
                   ProducttDecrement={ProducttDecrement}
                 />
-                <ButtonAddToCart id={product.id} count={count} count={count} />
+                <ButtonAddToCart id={product.id} count={count} />
                 <button>buy it now</button>
               </>
             ) : (

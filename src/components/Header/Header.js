@@ -8,6 +8,7 @@ import like from "../../img/icons/like.png";
 import cart from "../../img/icons/cart.png";
 import { Link } from "react-router-dom";
 import PersonalAreaModal from "../PersonalArea/PersonalAreaModal";
+import CartHeader from "../CartHeader/CartHeader";
 
 const Header = () => {
   return (
@@ -38,11 +39,7 @@ const Header = () => {
                     <img src={like} alt="like" />
                   </Link>
                 </div>
-                <div className="cart">
-                  <Link to="/cart">
-                    <img src={cart} alt="cart" />
-                  </Link>
-                </div>
+                <CartHeader />
               </div>
             </div>
           </div>
