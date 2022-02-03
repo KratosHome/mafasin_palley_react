@@ -8,6 +8,8 @@ import ProductColor from "../../components/UL/ProductColor/ProductColorr";
 import ProductCount from "../../components/UL/ProductCount/ProductCount";
 import ButtonAddToCart from "../../components/UL/ButtonAddToCart/ButtonAddToCart";
 import BayItNow from "../../components/UL/BayItNow/BayItNow";
+import ProductCategori from "../../components/UL/ProductCategori/ProductCategori";
+import ProductImg from "../../components/UL/ProductImg/ProductImg";
 
 const ProductPageItems = ({ product }) => {
   const [count, setCount] = useState(1);
@@ -34,7 +36,7 @@ const ProductPageItems = ({ product }) => {
     <div className="container ProductPageItems">
       <div className="row">
         <div className="col-sx-6 col-sm-6 col-md-6 col-ld-6 container">
-          <img className="ProductImage" src={product.img} alt={product.name} />
+          <ProductImg img={product.cart_img} />
         </div>
         <div className="col-sx-6 col-sm-6 col-md-6 col-ld-6 container">
           <div className="ProductPageContainerLikes">
@@ -107,7 +109,10 @@ const ProductPageItems = ({ product }) => {
             )}
           </div>
           <div className="ProductCategori">
-            Categories: {product.categories}
+            Categories:{" "}
+            {product.categories.map((category) => (
+              <ProductCategori product={category} />
+            ))}
           </div>
         </div>
       </div>

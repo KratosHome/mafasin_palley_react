@@ -1,0 +1,16 @@
+.ProductImgFirst {
+  max-width: 100%;
+}
+.ProductImgAther {
+  max-width: 24%;
+  margin: 2px;
+  transition: 1s; /* Время эффекта */
+  overflow: hidden;
+  display: inline-block;
+}
+
+.ProductImgAther:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  border: 1px solid #2dbbf0;
+}

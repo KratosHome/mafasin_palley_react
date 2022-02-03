@@ -3,13 +3,13 @@ import axios from "axios";
 export default class PostServer {
   static async GetOll(limit = 10, page = 1) {
     const response = await axios.get(
-        "https://run.mocky.io/v3/4d012ec8-ca05-4629-934d-c92acae60eaa",
-        {
-          params: {
-            _limit: limit,
-            _page: page,
-          },
-        }
+      "https://run.mocky.io/v3/e9a3737a-c816-4986-a4af-b36d4c3cdf55",
+      {
+        params: {
+          _limit: limit,
+          _page: page,
+        },
+      }
     );
     return response.data;
   }

@@ -5,10 +5,6 @@
   margin: 0 10px 0 0;
 }
 
-.ProductImage {
-  max-width: 100%;
-}
-
 .ProductPageName {
   font-family: MyFont;
   font-size: 24px;
@@ -160,4 +156,11 @@
   height: 1px;
   opacity: 0.5;
   margin-top: -15px;
+}
+.ProductCategori {
+  font-family: MyFont6;
+  font-size: 15px;
+  font-weight: 400;
+  color: #111;
+  padding-right: 5px;
 }
