@@ -57,6 +57,7 @@
 }
 
 .ProductPageDiscription {
+  position: relative;
   font-family: MyFont3;
   font-size: 15px;
   color: #969696;
@@ -70,7 +71,7 @@
   position: absolute;
   content: "";
   background-color: #969696;
-  width: 47%;
+  width: 100%;
   height: 1px;
   opacity: 0.5;
   margin-top: -30px;
@@ -157,10 +158,33 @@
   opacity: 0.5;
   margin-top: -15px;
 }
+
 .ProductCategori {
   font-family: MyFont6;
   font-size: 15px;
   font-weight: 400;
   color: #111;
   padding-right: 5px;
+}
+.ProductInfoFlex {
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.ProductInfo {
+  width: 23%;
+  min-width: 250px;
+  height: 130px;
+  border: 1px solid #e1e1e1;
+  margin: 30px 5px 30px 5px;
+}
+.ProductInfo img {
+  max-width: 80px;
+  max-height: 80px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 34%;
+}
+.ProductInfo span {
+  display: block;
+  text-align: center;
 }
