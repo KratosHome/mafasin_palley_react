@@ -13,7 +13,7 @@ const ProductTabs = ({
   review,
 }) => {
   const [tab, setTab] = useState(1);
-  const [rewise, setRewise] = useState(true);
+  const [rewise, setRewise] = useState(false);
 
   return (
     <>
@@ -119,18 +119,27 @@ const ProductTabs = ({
         ) : tab === 3 ? (
           <div className="container porductReviewsContainer2">
             <div className="porductReviewsContainer">
-              <dv>CUSTOMER REVIEWS</dv>
-              <div onClick={() => setRewise(!rewise)}>Write a review</div>
-              {rewise === true ? <WriteReview /> : null}
+              <dv className="porductReviewsH1">CUSTOMER REVIEWS</dv>
+              <div
+                className="clickOnWriteReviews"
+                onClick={() => setRewise(!rewise)}
+              >
+                Write a review
+              </div>
             </div>
+            {rewise === true ? <WriteReview /> : null}
             <div>
-              {review.map((i) => (
-                <div key={i.id}>
-                  <Grade grade={i.grade} />
-                  <div className="porductReviewsName">{i.name}</div>
-                  <div className="porductReviewsText">{i.text}</div>
-                </div>
-              ))}
+              {review.map((i) =>
+                i.id !== Number ? (
+                  <div key={i.id}>
+                    <Grade grade={i.grade} />
+                    <div className="porductReviewsName">{i.name}</div>
+                    <div className="porductReviewsText">{i.text}</div>
+                  </div>
+                ) : (
+                  <div>No reviews yet</div>
+                )
+              )}
             </div>
           </div>
         ) : null}

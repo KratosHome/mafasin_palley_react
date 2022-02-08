@@ -1,0 +1,54 @@
+.WriteReviewContaineer {
+  margin: 0 auto;
+  width: 90%;
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+.WriteReviewContaineer input {
+  margin-bottom: 20px;
+  vertical-align: top;
+}
+.WriteReviewContaineer div {
+  margin-bottom: 10px;
+}
+.WriteReviewH5 {
+  font-size: 16px;
+  line-height: 24px;
+}
+.WriteReviewImput {
+  width: 100%;
+  border: 1px solid #e4e4e4;
+  color: #111;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 8px 10px;
+  border-radius: 3px;
+  background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+}
+.WriteReviewComent {
+  box-sizing: border-box;
+  height: 200px;
+  padding-bottom: 170px;
+}
+.WriteReviewComent::placeholder {
+  position: absolute;
+}
+.WriteReviewbutton {
+  margin-left: 80%;
+  color: #fff;
+  background: #111111;
+  border: none;
+  border-radius: 0;
+  padding: 10px 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+.WriteReviewbutton:hover {
+  cursor: pointer;
+  background-color: #5fa9f8;
+}
