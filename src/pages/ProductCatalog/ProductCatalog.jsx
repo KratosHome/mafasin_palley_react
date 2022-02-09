@@ -6,6 +6,15 @@ import Loader from "../../components/UL/Loader/Loader";
 import MayBaner from "../../components/MayBaner/MayBaner";
 
 const ProductCatalog = () => {
+  useEffect(() => {
+    document.title = "Product";
+  }, []);
+
+  useEffect(() => {
+    document.head.getElementsByTagName("link")[0].href =
+      " http://localhost:3000/favicon.ico";
+  }, []);
+
   const [getProduct, setGetProduct] = useState([]);
 
   useEffect(() => {
@@ -24,7 +33,6 @@ const ProductCatalog = () => {
           <div className="col-sx-12 col-sm-12 col-md-12 col-ld-12">
             <div className="home_product_container">
               <h2>Products Pag</h2>
-              <MayBaner />
               <div>Don't Miss Today's Featured Deals</div>
               {getProduct.length ? (
                 <div className="home_product_list">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./ProductPage.css";
 import HotDell from "../HomePage/HotDell/HotDell";
 import Grade from "../../components/UL/Grade/Grade";
@@ -32,6 +32,13 @@ const ProductPageItems = ({ product }) => {
     const result = (product.remainder / ninCount) * 100;
     return result;
   }
+  useEffect(() => {
+    document.title = product.name;
+  }, []);
+
+  useEffect(() => {
+    document.head.getElementsByTagName("link")[0].href = `${product.img}`;
+  }, []);
 
   return (
     <>
