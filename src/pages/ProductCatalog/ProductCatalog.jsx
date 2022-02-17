@@ -4,17 +4,12 @@ import ProductList from "../../components/ProductList/ProductList";
 import "./ProductCatalog.css";
 import Loader from "../../components/UL/Loader/Loader";
 import MayBaner from "../../components/MayBaner/MayBaner";
+import { useTitle } from "../../hooks/useTitle";
+
 
 const ProductCatalog = () => {
-  useEffect(() => {
-    document.title = "Product";
-  }, []);
-
-  useEffect(() => {
-    document.head.getElementsByTagName("link")[0].href =
-      " http://localhost:3000/favicon.ico";
-  }, []);
-
+  useTitle("Product");
+  
   const [getProduct, setGetProduct] = useState([]);
 
   useEffect(() => {

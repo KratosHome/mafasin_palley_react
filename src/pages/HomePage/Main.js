@@ -6,17 +6,11 @@ import TestinoiaksHome from "./TestinoiaksHome/TestinoiaksHome";
 import Instagrame from "./Instagrame/Instagrame";
 import HotDell from "./HotDell/HotDell";
 import MayBaner from "../../components/MayBaner/MayBaner";
+import { useTitle } from "../../hooks/useTitle";
+
 
 const Main = () => {
-  useEffect(() => {
-    document.title = "Palley";
-  }, []);
-
-  useEffect(() => {
-    document.head.getElementsByTagName("link")[0].href =
-      " http://localhost:3000/favicon.ico";
-  }, []);
-
+  useTitle("Home Page");
   return (
     <>
       <MayBaner />

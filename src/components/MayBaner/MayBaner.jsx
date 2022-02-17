@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./MayBaner.css";
 import dataSlider from "./dataSlider";
 import Btnbaner from "./BTNBaner/BTNBaner";
+import { Prev } from "react-bootstrap/esm/PageItem";
 
 const MayBaner = () => {
   const [slideIndex, setSlideInsex] = useState(1);
@@ -25,6 +26,10 @@ const MayBaner = () => {
   const moveDot = (index) => {
     setSlideInsex(index);
   };
+  
+
+
+  
   return (
     <>
       <div className="container-slider">

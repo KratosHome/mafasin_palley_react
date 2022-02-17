@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import ModalReview from "../../../components/UL/ModalReview/ModalReview";
+import ModalReview from "../../../components/modal/ModalReview/ModalReview";
+
 import "./WriteReview.css";
 
 const WriteReview = () => {
@@ -21,6 +22,7 @@ const WriteReview = () => {
         <div className="WriteReviewH5">Write A Review</div>
         <div>Name</div>
         <input
+        required
           value={name}
           onChange={(e) => setName(e.target.value)}
           name="NameReways"
@@ -30,6 +32,7 @@ const WriteReview = () => {
         />
         <div>Email</div>
         <input
+        required
           name="EemailReways"
           className="WriteReviewImput"
           placeholder="Eemail"
@@ -41,6 +44,7 @@ const WriteReview = () => {
         <div>звездочки</div>
         <div>Body of Review (1500)</div>
         <input
+          required
           name="Review"
           className="WriteReviewImput WriteReviewComent"
           placeholder="Write your coment here"
@@ -55,8 +59,11 @@ const WriteReview = () => {
           className="WriteReviewbutton"
           onClick={() => setModal(!modal)}
         />
+
       </form>
-      {modal === true ? <ModalReview /> : null}
+      {modal === true && email.length > 5 && name.length > 2 && message.length > 10 ? (
+        <ModalReview text={"Rewuwer sent"} />
+      ) : null}
     </>
   );
 };

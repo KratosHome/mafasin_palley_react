@@ -11,6 +11,8 @@ import BayItNow from "../../components/UL/BayItNow/BayItNow";
 import ProductCategori from "../../components/UL/ProductCategori/ProductCategori";
 import ProductImg from "../../components/UL/ProductImg/ProductImg";
 import ProductTabs from "./ProductTabs/ProductTabs";
+import { useTitle } from "../../hooks/useTitle";
+
 
 const ProductPageItems = ({ product }) => {
   const [count, setCount] = useState(1);
@@ -32,13 +34,8 @@ const ProductPageItems = ({ product }) => {
     const result = (product.remainder / ninCount) * 100;
     return result;
   }
-  useEffect(() => {
-    document.title = product.name;
-  }, []);
 
-  useEffect(() => {
-    document.head.getElementsByTagName("link")[0].href = `${product.img}`;
-  }, []);
+  useTitle(product.name, product.img);
 
   return (
     <>
