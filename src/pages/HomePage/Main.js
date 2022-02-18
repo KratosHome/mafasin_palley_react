@@ -14,7 +14,6 @@ const Main = () => {
   return (
     <>
       <MayBaner />
-      <SmipeSlider />
       <HomeProductMain />
       <BanerMain />
       <HotDell />

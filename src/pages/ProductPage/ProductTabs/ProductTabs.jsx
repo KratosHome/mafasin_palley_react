@@ -18,6 +18,7 @@ const ProductTabs = ({
   return (
     <>
       <div>
+
         <div class="ProductTabsContainer">
           <div
             className={tab === 1 ? "ProductTabsH1Activ" : "ProductTabsH1"}

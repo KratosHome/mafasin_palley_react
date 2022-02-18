@@ -1,28 +1,33 @@
 const dataSlider = [
   {
     id: 1,
-    title: "Lorem ipsum",
+    title: "OVER-EAR",
     subTitle: "Lorem",
+    from: 34
   },
   {
     id: 2,
-    title: "Lorem ipsum",
+    title: "Texx",
     subTitle: "Lorem",
+    from: 24
   },
   {
     id: 3,
-    title: "Lorem ipsum",
+    title: "",
     subTitle: "Lorem",
+    from: 25
   },
   {
     id: 4,
-    title: "Lorem ipsum",
+    title: "page",
     subTitle: "Lorem",
+    from: 99
   },
   {
     id: 5,
-    title: "Lorem ipsum",
+    title: "liks",
     subTitle: "Lorem",
+    from: 55
   },
 ];
 

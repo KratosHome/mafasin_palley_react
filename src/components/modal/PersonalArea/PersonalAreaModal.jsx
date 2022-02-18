@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import "./PersonalAreaModal.css"
 import {Link} from "react-router-dom";
-import personal_area from "../../img/icons/personal_area.png";
-import logo from "../../img/icons/logo.png"
+import personal_area from "../../../img/icons/personal_area.png";
+import logo from "../../../img/icons/logo.png"
 
 const PersonalAreaModal=() => {
     const [isOpen, setIsOpen]=useState(false)
