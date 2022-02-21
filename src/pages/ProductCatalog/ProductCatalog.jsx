@@ -31,8 +31,10 @@ const ProductCatalog = () => {
               <div>Don't Miss Today's Featured Deals</div>
               {getProduct.length ? (
                 <div className="home_product_list">
-                  {getProduct.map((product) => (
-                    <ProductList product={product} />
+                  {getProduct.map((product, index) => (
+                    <> 
+                    <ProductList key={index} product={product} />
+                    </>
                   ))}
                 </div>
               ) : (

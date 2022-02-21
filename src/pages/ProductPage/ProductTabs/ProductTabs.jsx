@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./ProductTabs.css";
 import Grade from "../../../components/UL/Grade/Grade";
 import WriteReview from "../WriteReview/WriteReview";
+import { CSSTransition } from "react-transition-group";
 
 const ProductTabs = ({
   discription,
@@ -15,10 +16,11 @@ const ProductTabs = ({
   const [tab, setTab] = useState(1);
   const [rewise, setRewise] = useState(false);
 
+  const [css, serCss] = useState(true)
+
   return (
     <>
       <div>
-
         <div class="ProductTabsContainer">
           <div
             className={tab === 1 ? "ProductTabsH1Activ" : "ProductTabsH1"}
@@ -32,6 +34,7 @@ const ProductTabs = ({
           >
             ADDITIONAL INFORMATION
           </div>
+
           <div
             className={tab === 3 ? "ProductTabsH1Activ" : "ProductTabsH1"}
             onClick={() => setTab(3)}
@@ -39,8 +42,7 @@ const ProductTabs = ({
             REVIEW
           </div>
         </div>
-
-        {tab === 1 ? (
+        <CSSTransition in={tab === 1} classNames="alert" timeout={300} unmountOnExit >
           <div className="container ProductTabsDescriptonContainer">
             <p>{discription}</p>
             <div className="row">
@@ -77,47 +79,47 @@ const ProductTabs = ({
               </div>
             </div>
           </div>
-        ) : tab === 2 ? (
-          <>
-            <div className="container poductInfoContainer">
-              <div className="col-sx-4 col-sm-4 col-md-4 col-ld-4">
-                <div>MORE INFOMATION TO YOU</div>
-                <h5>Things You Need To Know</h5>
-                <div>
-                  We use industry standard SSL encryption to protect your
-                  details. Potentially sensitive information such as your name,
-                  address and card details are encoded so they can only be read
-                  on the secure server.
-                </div>
-                <ul>
-                  <li>Safe Payments</li>
-                  <li>Accept Credit Cart</li>
-                  <li>Different Payment Method</li>
-                  <li>Price Include VAT</li>
-                  <li>Easy To Order</li>
-                </ul>
+        </CSSTransition>
+        <CSSTransition in={tab === 2} classNames="alert" timeout={300} unmountOnExit >
+          <div className="container poductInfoContainer">
+            <div className="col-sx-4 col-sm-4 col-md-4 col-ld-4">
+              <div>MORE INFOMATION TO YOU</div>
+              <h5>Things You Need To Know</h5>
+              <div>
+                We use industry standard SSL encryption to protect your
+                details. Potentially sensitive information such as your name,
+                address and card details are encoded so they can only be read
+                on the secure server.
               </div>
-              <div className="col-sx-4 col-sm-4 col-md-4 col-ld-4">
-                <ul>
-                  <h5>Express Delivery</h5>
-                  <li>Europe & USA within 2-4 days</li>
-                  <li>Rest of the world within 3-7 days</li>
-                  <li>Selected locations</li>
-                </ul>
-                <ul>
-                  <h5>Need More Information</h5>
-                  <li>Orders & Shipping</li>
-                  <li>Returns & Refunds</li>
-                  <li>Payments</li>
-                  <li>Your Orders</li>
-                </ul>
-              </div>
-              <div className="col-sx-4 col-sm-4 col-md-4 col-ld-4">
-                <img src={img} alt={img} className="poductInfoImg" />
-              </div>
+              <ul>
+                <li>Safe Payments</li>
+                <li>Accept Credit Cart</li>
+                <li>Different Payment Method</li>
+                <li>Price Include VAT</li>
+                <li>Easy To Order</li>
+              </ul>
             </div>
-          </>
-        ) : tab === 3 ? (
+            <div className="col-sx-4 col-sm-4 col-md-4 col-ld-4">
+              <ul>
+                <h5>Express Delivery</h5>
+                <li>Europe & USA within 2-4 days</li>
+                <li>Rest of the world within 3-7 days</li>
+                <li>Selected locations</li>
+              </ul>
+              <ul>
+                <h5>Need More Information</h5>
+                <li>Orders & Shipping</li>
+                <li>Returns & Refunds</li>
+                <li>Payments</li>
+                <li>Your Orders</li>
+              </ul>
+            </div>
+            <div className="col-sx-4 col-sm-4 col-md-4 col-ld-4">
+              <img src={img} alt={img} className="poductInfoImg" />
+            </div>
+          </div>
+        </CSSTransition>
+        <CSSTransition in={tab === 3} classNames="alert" timeout={300} unmountOnExit >
           <div className="container porductReviewsContainer2">
             <div className="porductReviewsContainer">
               <dv className="porductReviewsH1">CUSTOMER REVIEWS</dv>
@@ -128,7 +130,9 @@ const ProductTabs = ({
                 Write a review
               </div>
             </div>
-            {rewise === true ? <WriteReview /> : null}
+            <CSSTransition in={rewise} classNames="alert" timeout={300} unmountOnExit >
+              <WriteReview />
+            </CSSTransition>
             <div>
               {review.map((i) =>
                 i.id !== Number ? (
@@ -143,7 +147,7 @@ const ProductTabs = ({
               )}
             </div>
           </div>
-        ) : null}
+        </CSSTransition>
       </div>
     </>
   );

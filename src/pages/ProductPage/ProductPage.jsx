@@ -25,11 +25,11 @@ const ProductPage = () => {
   return (
     <>
       {getProductInProduct.length ? (
-        <div>
-          {getProductInProduct.map((product) => (
-            <ProductPageItems key={product.id} product={product} />
-          ))}
-        </div>
+        <>
+            {getProductInProduct.map((product) => (
+              <ProductPageItems key={product.id} product={product} />
+            ))}
+        </>
       ) : (
         <Loader />
       )}

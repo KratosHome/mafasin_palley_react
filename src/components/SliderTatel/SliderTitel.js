@@ -2,7 +2,7 @@ import React from 'react';
 import "./SliderTitel.css"
 
 const SliderTitel=({title, from}) => {
-    console.log(from)
+
     return (
         <div className="slider_title_container">
             <h3>{title}</h3>
