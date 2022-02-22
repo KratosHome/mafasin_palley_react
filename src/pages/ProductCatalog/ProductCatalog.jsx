@@ -32,9 +32,7 @@ const ProductCatalog = () => {
               {getProduct.length ? (
                 <div className="home_product_list">
                   {getProduct.map((product, index) => (
-                    <> 
                     <ProductList key={index} product={product} />
-                    </>
                   ))}
                 </div>
               ) : (

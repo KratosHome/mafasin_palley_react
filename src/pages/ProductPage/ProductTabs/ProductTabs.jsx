@@ -21,7 +21,7 @@ const ProductTabs = ({
   return (
     <>
       <div>
-        <div class="ProductTabsContainer">
+        <div className="ProductTabsContainer">
           <div
             className={tab === 1 ? "ProductTabsH1Activ" : "ProductTabsH1"}
             onClick={() => setTab(1)}
@@ -47,10 +47,10 @@ const ProductTabs = ({
             <p>{discription}</p>
             <div className="row">
               <img src="./../img/product/brend_img.jpg" alt="brend" />
-              <divv>
+              <div>
                 <h5>BRAND</h5>
                 <p>{brand}</p>
-              </divv>
+              </div>
             </div>
             <div className="row ProductTabsDescriptonContainerLI">
               <div>
@@ -122,7 +122,7 @@ const ProductTabs = ({
         <CSSTransition in={tab === 3} classNames="alert" timeout={300} unmountOnExit >
           <div className="container porductReviewsContainer2">
             <div className="porductReviewsContainer">
-              <dv className="porductReviewsH1">CUSTOMER REVIEWS</dv>
+              <div className="porductReviewsH1">CUSTOMER REVIEWS</div>
               <div
                 className="clickOnWriteReviews"
                 onClick={() => setRewise(!rewise)}

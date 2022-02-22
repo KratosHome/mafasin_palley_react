@@ -16,8 +16,7 @@ const HotDell = () => {
     setGetProduct(getProduct);
   }
 
-  const HotDell = getProduct.map((test) => test.categories.indexOf("Hot Dell"));
-
+  
   return (
     <div className="container bacground_home_product_main">
       <div className="col-sx-12 col-sm-12 col-md-12 col-ld-12">

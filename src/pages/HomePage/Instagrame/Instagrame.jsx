@@ -4,7 +4,6 @@ import InstagramItem from "../../../components/InstagramItem/InstagramItem";
 import "./Instagrame.css";
 import "react-alice-carousel/lib/alice-carousel.css";
 import AliceCarousel from "react-alice-carousel";
-import { MdElderly } from "react-icons/md";
 
 const Instagrame = () => {
   const [getInstagrame, setGetInstagram] = useState([]);
@@ -17,7 +16,6 @@ const Instagrame = () => {
     const getInstagrame = await PostServer.Instagram();
     setGetInstagram(getInstagrame);
   }
-  let responsive = {};
 
   function useWindowSize() {
     const [size, setSize] = useState([0, 0]);
@@ -32,15 +30,9 @@ const Instagrame = () => {
     return size;
   }
 
-  function ShowWindowDimensions(props) {
-    const [width, height] = useWindowSize();
-    return (
-      <span>
-        Window size: {width} x {height}
-      </span>
-    );
-  }
-  const bla = ShowWindowDimensions().props.children[1];
+  const [width, height] = useWindowSize();
+
+  let responsive = {};
 
   function counInstagramSlider() {
     responsive = {
@@ -52,29 +44,29 @@ const Instagrame = () => {
       5: { items: 6 },
     };
 
-    if (+bla <= 730) {
+    if (+width <= 730) {
       responsive = {
         0: { items: 1 },
       };
-    } else if (+bla <= 1025) {
+    } else if (+width <= 1025) {
       responsive = {
         0: { items: 1 },
         1: { items: 2 },
       };
-    } else if (+bla <= 1571) {
+    } else if (+width <= 1571) {
       responsive = {
         0: { items: 1 },
         1: { items: 2 },
         2: { items: 3 },
       };
-    } else if (+bla <= 2025) {
+    } else if (+width <= 2025) {
       responsive = {
         0: { items: 1 },
         1: { items: 2 },
         2: { items: 3 },
         3: { items: 4 },
       };
-    } else if (+bla <= 3020) {
+    } else if (+width <= 3020) {
       responsive = {
         0: { items: 1 },
         1: { items: 2 },
@@ -88,7 +80,7 @@ const Instagrame = () => {
 
   function paddigSlider() {
     let paddigSlider;
-    if (+bla < 760) {
+    if (+width < 760) {
       paddigSlider = 0;
     } else {
       paddigSlider = 70;

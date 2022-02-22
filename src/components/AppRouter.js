@@ -11,20 +11,17 @@ import "./AppRouter.css"
 
 const AppRouters = () => {
   const location = useLocation()
+
   return (
     <>
-      <TransitionGroup>
-        <CSSTransition key={location.pathname} classNames="alert" timeout={300} unmountOnExit >
-          <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/contact_ass" element={<ContactPage />} />
-            <Route path="/products" element={<ProductCatalog />} />
-            <Route path="/products/:id" element={<ProductPage />} />
-            <Route path="/cart" element={<CartPage />} />
-            <Route path="/*" element={<NotFound />} />
-          </Routes>
-        </CSSTransition>
-      </TransitionGroup>
+      <Routes  >
+        <Route path="/" element={<Main />} />
+        <Route path="/contact_ass" element={<ContactPage />} />
+        <Route path="/products" element={<ProductCatalog />} />
+        <Route path="/products/:id" element={<ProductPage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/*" element={<NotFound />} />
+      </Routes>
     </>
   );
 };

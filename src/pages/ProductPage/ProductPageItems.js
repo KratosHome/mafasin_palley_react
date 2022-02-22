@@ -119,7 +119,7 @@ const ProductPageItems = ({ product }) => {
               <div className="ProductCategori">
                 Categories:{" "}
                 {product.categories.map((category) => (
-                  <ProductCategori product={category} />
+                  <ProductCategori key={category} product={category} />
                 ))}
               </div>
             </div>

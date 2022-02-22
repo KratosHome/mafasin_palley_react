@@ -49,7 +49,7 @@ const WriteReview = () => {
           className="WriteReviewImput WriteReviewComent"
           placeholder="Write your coment here"
           type="text"
-          maxlength="1500"
+          maxLength="1500"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
@@ -57,6 +57,7 @@ const WriteReview = () => {
           type="submit"
           value="Отправить"
           className="WriteReviewbutton"
+          readOnly
           onClick={() => setModal(!modal)}
         />
 

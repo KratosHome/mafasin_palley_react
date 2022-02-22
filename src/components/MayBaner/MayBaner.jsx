@@ -32,24 +32,18 @@ const MayBaner = () => {
 
 
   useEffect(() => {
-    let isCancelled = false
-    const banerChang = async () =>{
-      if (isRining && !isCancelled) {
-        setTimeout(() => {
-          if (slideIndex !== dataSlider.length) {
-            setSlideInsex(slideIndex + 1);
-          } else if (slideIndex === dataSlider.length) {
-            setSlideInsex(1);
-          }
-        }, 2500)
-      } else {
-        clearInterval(!isRining && isCancelled)
+    if (isRining) {
+    const chengBaner =  setTimeout(() => {
+        if (slideIndex !== dataSlider.length) {
+          setSlideInsex(slideIndex + 1);
+        } else if (slideIndex === dataSlider.length) {
+          setSlideInsex(1);
+        } 
+      }, 2500)
+      return() =>{
+        clearTimeout(chengBaner)
       }
-    }
-    banerChang()
-    return() =>{
-      isCancelled = true
-    }
+    } 
   }, [slideIndex, isRining])
 
 

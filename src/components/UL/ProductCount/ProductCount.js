@@ -18,7 +18,7 @@ const ProductCount = ({
       >
         <BsFileArrowUpFill className="BsFileArrowUpFill" />
       </button>
-      <input className="PodoctPageCounterInput" value={count} />
+      <input className="PodoctPageCounterInput" value={count} readOnly/>
       <button
         className="ProducttDecrement"
         onClick={(e) => ProducttDecrement(e)}
