@@ -55,7 +55,7 @@ const ProductPageItems = ({ product }) => {
               </div>
               <div className="ProductPageContainerPrise">
                 <div className="ProductPageNameNewPrise">
-                  ${product.newPrise} USD
+                  ${product.newPrise} BTS
                 </div>
                 <div className="ProductPageNamePrise">${product.prise} USD</div>
               </div>
