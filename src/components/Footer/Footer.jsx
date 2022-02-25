@@ -3,11 +3,13 @@ import "./Footer.css";
 import logo from "../../img/icons/logo.png";
 import visa from "../../img/icons/pay_copyright.png";
 import { Link } from "react-router-dom";
+import WOW from "wow.js"
 
 const Footer = () => {
+  new WOW().init()
   return (
-    <footer>
-      <div className="col-sx-12 col-sm-12 col-md-12 col-ld-12">
+    <footer className="wow animate__animated animate__backInUp">
+      <div className="col-sx-12 col-sm-12 col-md-12 col-ld-12 ">
         <div className="footerContainer">
           <div className="footerBlok1">
             <img className="logo" src={logo} alt="Palley" />

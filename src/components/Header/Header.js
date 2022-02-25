@@ -9,8 +9,10 @@ import cart from "../../img/icons/cart.png";
 import { Link } from "react-router-dom";
 import PersonalAreaModal from "../modal/PersonalArea/PersonalAreaModal";
 import CartHeader from "../CartHeader/CartHeader";
+import WOW from "wow.js"
 
 const Header = () => {
+
   return (
     <>
       <header>

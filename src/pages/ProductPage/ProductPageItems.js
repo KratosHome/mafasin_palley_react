@@ -12,7 +12,7 @@ import ProductCategori from "../../components/UL/ProductCategori/ProductCategori
 import ProductImg from "../../components/UL/ProductImg/ProductImg";
 import ProductTabs from "./ProductTabs/ProductTabs";
 import { useTitle } from "../../hooks/useTitle";
-import { CSSTransition } from "react-transition-group";
+import WOW from "wow.js"
 
 
 const ProductPageItems = ({ product }) => {
@@ -37,11 +37,11 @@ const ProductPageItems = ({ product }) => {
   }
 
   useTitle(product.name, product.img);
-
+  new WOW().init()
 
   return (
     <>
-        <div className="container ProductPageItems">
+        <div className="container ProductPageItems  animate__animated animate__backInUp">
           <div className="row">
             <div className="col-sx-12 col-sm-7 col-md-7 col-ld-7 container">
               <ProductImg img={product.cart_img} />

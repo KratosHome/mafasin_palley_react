@@ -3,6 +3,7 @@ import PostServer from "../../../API/PostServer";
 import TestinoiaksItem from "./../TestinoiaksItem/TestinoiaksItem";
 import "./TestinoiaksHome.css";
 import Carousel from "nuka-carousel";
+import WOW from "wow.js"
 
 const TestinoiaksHome = () => {
   const [getTestinoiaksHome, setGetTestinoiaksHome] = useState([]);
@@ -15,11 +16,12 @@ const TestinoiaksHome = () => {
     const getTestinoiaksHome = await PostServer.TestinoiaksHome();
     setGetTestinoiaksHome(getTestinoiaksHome);
   }
+  new WOW().init()
   return (
-    <div className="TestinoiaksHomeContainer">
+    <div className="TestinoiaksHomeContainer wow animate__animated animate__backInUp">
       <div className="TestinoiaksHomeImeage">
         <h3 className="TestinoiaksHomeH3">TESTIMONIALS</h3>
-        <div className="caruselHeigth">
+        <div className="caruselHeigth wow animate__animated animate__backInLeft">
           <Carousel
             enableKeyboardControls={true}
             pauseOnHover={false}

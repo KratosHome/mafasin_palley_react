@@ -4,6 +4,7 @@ import InstagramItem from "../../../components/InstagramItem/InstagramItem";
 import "./Instagrame.css";
 import "react-alice-carousel/lib/alice-carousel.css";
 import AliceCarousel from "react-alice-carousel";
+import WOW from "wow.js"
 
 const Instagrame = () => {
   const [getInstagrame, setGetInstagram] = useState([]);
@@ -88,8 +89,10 @@ const Instagrame = () => {
     return paddigSlider;
   }
 
+  new WOW().init()
+
   return (
-    <div className="InstagramePage">
+    <div className="InstagramePage wow animate__animated animate__backInDown">
       <h3>#INSTAGRAM</h3>
       <div>
         <AliceCarousel
