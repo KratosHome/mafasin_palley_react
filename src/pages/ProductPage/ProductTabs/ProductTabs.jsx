@@ -13,8 +13,34 @@ const ProductTabs = ({
   img,
   review,
 }) => {
+
+
+  const [reviews, setRewise] = React.useState(review)
+
+
+
+  const [post, setPost] = React.useState({
+    grade: 3,
+    email: "",
+    name: "",
+    text: ""
+  })
+
+
+  const sentReview = (e) => {
+    e.preventDefault()
+    setRewise([...review, { ...post, id: Date.now() }])
+    setPost({
+      grade: 3,
+      email: "",
+      name: "",
+      text: ""
+    })
+  }
+
+
   const [tab, setTab] = useState(1);
-  const [rewise, setRewise] = useState(false);
+  const [inimateRewise, seAnimeatetRewise] = useState(false);
 
   const [css, serCss] = useState(true)
 
@@ -125,16 +151,20 @@ const ProductTabs = ({
               <div className="porductReviewsH1">CUSTOMER REVIEWS</div>
               <div
                 className="clickOnWriteReviews"
-                onClick={() => setRewise(!rewise)}
+                onClick={() => seAnimeatetRewise(!inimateRewise)}
               >
                 Write a review
               </div>
             </div>
-            <CSSTransition in={rewise} classNames="alert" timeout={300} unmountOnExit >
-              <WriteReview />
+            <CSSTransition in={inimateRewise} classNames="alert" timeout={300} unmountOnExit >
+              <WriteReview
+                sentReview={sentReview}
+                setPost={setPost}
+                post={post}
+              />
             </CSSTransition>
             <div>
-              {review.map((i) =>
+              {reviews.map((i) =>
                 i.id !== Number ? (
                   <div key={i.id}>
                     <Grade grade={i.grade} />
