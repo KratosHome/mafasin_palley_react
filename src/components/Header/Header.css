@@ -23,10 +23,18 @@ header {
 .search img,
 .personal_area img,
 .likes img,
+.personal_area,
 .cart img {
   width: 25px;
   height: 25px;
   margin: 0 10px 0 0;
+}
+.personal_area{
+  background: none;
+  border: none;
+}
+.personal_area:hover{
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -46,3 +54,4 @@ header {
     margin-top: -5px;
   }
 }
+

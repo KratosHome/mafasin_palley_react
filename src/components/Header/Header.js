@@ -9,10 +9,11 @@ import cart from "../../img/icons/cart.png";
 import { Link } from "react-router-dom";
 import PersonalAreaModal from "../modal/PersonalArea/PersonalAreaModal";
 import CartHeader from "../CartHeader/CartHeader";
-import { AuthContext } from "../../contex/contex";
+import MayModal from "../UL/MayModal/MayModal";
 
 
 const Header = () => {
+  const [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>
@@ -36,7 +37,12 @@ const Header = () => {
                     <img src={search} alt="search" />
                   </Link>
                 </div>
-                <PersonalAreaModal />
+                <button className="personal_area" onClick={() => setModalOpen(true)}>
+                  <img src={personal_area} alt="personal_area" />
+                </button>
+                <MayModal visivle={modalOpen} setVisible={setModalOpen} >
+                  <PersonalAreaModal setVisible={setModalOpen}/>
+                </MayModal>
                 <div className="likes">
                   <Link to="/likes">
                     <img src={like} alt="like" />

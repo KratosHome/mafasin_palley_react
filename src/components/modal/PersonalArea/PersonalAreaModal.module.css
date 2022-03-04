@@ -1,0 +1,48 @@
+.PersonalAreaModal {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 480px));
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+
+.logo_modal {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo_modal img {
+    max-width: 200px;
+    max-height: 300px;
+}
+.logo_modal:after {
+    display: block;
+    content: "";
+    width: 130%;
+    height: 1px;
+    background-color: #7d7b7b;
+    bottom: 55%;
+    margin-left: -20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.maodal_person_areea_input {
+    display: flex;
+    color: rgba(73, 80, 87, 0.5);
+    font-size: 1rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border: 1px solid rgba(73, 80, 87, 0.5);
+    margin:  25px  8% 0  auto ;
+    width: 80%;
+    min-height: 50px;
+    padding-left: 5%;
+}
+
+.maodal_person_areeaA {
+    margin: 25px 0 5% 13%;
+    margin-top: 25px;
+    color: rgba(73, 80, 87, 0.5);
+    text-decoration: none;
+}
