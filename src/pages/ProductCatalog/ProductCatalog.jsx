@@ -1,33 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo, useContext } from "react";
 import PostServer from "../../API/PostServer";
 import ProductList from "../../components/ProductList/ProductList";
 import "./ProductCatalog.css";
 import Loader from "../../components/UL/Loader/Loader";
 import { useTitle } from "../../hooks/useTitle";
 import Mayselect from "../../components/UL/select/MaySelect";
-import Select from 'react-select';
-
-
-const ProductCatalog = () => {
-  useTitle("Product");
-
-  const [getProduct, setGetProduct] = useState([]);
-
-  useEffect(() => {
-    fetchProducts();
-  }, []);
-
-  async function fetchProducts() {
-    const getProduct = await PostServer.GetOll();
-    setGetProduct(getProduct);
-  }
-
-  const [selectedSort, setSelectedSort] = useState("")
-
-  const sortProduct = (sort) => {
-    setSelectedSort(sort)
-    setGetProduct([...getProduct].sort((a, b) => a[sort].localeCompare(b[sort])))
-  }
+import MayIput from "../../components/UL/MayInput/MayIput";
+import { AuthContext } from "../../contex/contex";
 
 /*
   const sortProductTwo = () => {
@@ -48,7 +27,35 @@ const ProductCatalog = () => {
     }
   }
 */
-  console.log(getProduct)
+
+const ProductCatalog = () => {
+
+  useTitle("Product");
+
+  const [getProduct, setGetProduct] = useState([]);
+  const [filter, setFilter] = useState({sort: "", query: ""})
+
+  useEffect(() => {
+    fetchProducts();
+  }, []);
+
+  async function fetchProducts() {
+    const getProduct = await PostServer.GetOll();
+    setGetProduct(getProduct);
+  }
+
+  const sortedPost = useMemo(() => {
+    if (filter.sort) {
+      return [...getProduct].sort((a, b) => a[filter.sort].localeCompare(b[filter.sort]))
+    } else {
+      return getProduct
+    }
+  }, [filter.sort, getProduct])
+
+  const sortedAndSearchedPosts = useMemo(() => {
+    return sortedPost.filter(posts => posts.name.toLocaleUpperCase().includes(filter.query.toLocaleUpperCase()))
+  }, [filter.query, sortedPost])
+
 
   return (
     <div>
@@ -57,18 +64,23 @@ const ProductCatalog = () => {
           <div className="col-sx-12 col-sm-12 col-md-12 col-ld-12">
             <div className="home_product_container">
               <h2>Products Pag</h2>
+                <MayIput
+                value={filter.query}
+                onChange={e => setFilter({...filter, query: e.target.value})}
+                placeholder='Пошук'
+              />
               <Mayselect
-                onChange={sortProduct}
-                value={selectedSort}
+                onChange={selectedSort => setFilter({...filter, sort: selectedSort})}
+                value={filter.sort}
                 defaultValue="Сортировка"
                 options={[
-                  { value: "name2", name: "по релевантності" },
+                  { value: "discription", name: "по релевантності" },
                   { value: "name", name: "по названию" },
                 ]}
               />
-              {getProduct.length ? (
+              {sortedAndSearchedPosts.length ? (
                 <div className="home_product_list">
-                  {getProduct.map((product, index) => (
+                  {sortedAndSearchedPosts.map((product, index) => (
                     <ProductList key={index} product={product} />
                   ))}
                 </div>

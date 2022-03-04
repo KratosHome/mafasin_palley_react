@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Header.css";
 import Menu from "./Menu/Menu";
 import logo from "../../img/icons/logo.png";
@@ -9,7 +9,8 @@ import cart from "../../img/icons/cart.png";
 import { Link } from "react-router-dom";
 import PersonalAreaModal from "../modal/PersonalArea/PersonalAreaModal";
 import CartHeader from "../CartHeader/CartHeader";
-import WOW from "wow.js"
+import { AuthContext } from "../../contex/contex";
+
 
 const Header = () => {
 
@@ -31,7 +32,7 @@ const Header = () => {
             <div className="col-sx-4 col-sm-4 col-md-4 col-ld-4">
               <div className="navigator">
                 <div className="search">
-                  <Link to="/search">
+                  <Link to="/Search">
                     <img src={search} alt="search" />
                   </Link>
                 </div>
