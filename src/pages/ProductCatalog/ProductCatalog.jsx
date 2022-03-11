@@ -17,8 +17,8 @@ const ProductCatalog = () => {
   const [filter, setFilter] = useState({ sort: "", query: "" })
 
 
-  const [selectValue, setSelectValue] = useState(["Oll Pages", "Home Page", "Best seller", "Hot deal"])
-  console.log(setSelectValue)
+  const [selectValue] = useState(["Oll Pages", "Home Page", "Best seller", "Hot deal"])
+
   const [selectProduct, setSlectProduct] = useState("Oll Pages")
 
   useEffect(() => {
@@ -30,8 +30,7 @@ const ProductCatalog = () => {
     setGetProduct(getProduct);
   }
 
-  const [filterBrands, setFilterBrands] = useState("")
-  console.log(setFilterBrands)
+ 
 
   const result = getProduct.filter(get => {
     if (get.categories[0] === selectProduct) {
