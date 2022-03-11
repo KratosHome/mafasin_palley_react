@@ -9,6 +9,7 @@ const InstagramItem = ({ inst }) => {
           data-value={inst.id}
           className="InstagramItemImg item"
           src={inst.image}
+          alt={inst.id}
         />
         <div className="HoverImgTwo"></div>
         <div className="HoverImgThre"></div>

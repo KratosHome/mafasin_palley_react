@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo, useContext } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import PostServer from "../../API/PostServer";
 import ProductList from "../../components/ProductList/ProductList";
 import "./ProductCatalog.css";
@@ -6,7 +6,6 @@ import Loader from "../../components/UL/Loader/Loader";
 import { useTitle } from "../../hooks/useTitle";
 import Mayselect from "../../components/UL/select/MaySelect";
 import MayIput from "../../components/UL/MayInput/MayIput";
-import { AuthContext } from "../../contex/contex";
 import Filretproductleft from "../../components/FilretProductLeft/FilretProductLeft";
 
 
@@ -19,6 +18,7 @@ const ProductCatalog = () => {
 
 
   const [selectValue, setSelectValue] = useState(["Oll Pages", "Home Page", "Best seller", "Hot deal"])
+  console.log(setSelectValue)
   const [selectProduct, setSlectProduct] = useState("Oll Pages")
 
   useEffect(() => {
@@ -31,6 +31,7 @@ const ProductCatalog = () => {
   }
 
   const [filterBrands, setFilterBrands] = useState("")
+  console.log(setFilterBrands)
 
   const result = getProduct.filter(get => {
     if (get.categories[0] === selectProduct) {
@@ -45,8 +46,9 @@ const ProductCatalog = () => {
       return true
     } else if (get.name === selectProduct) {
       return true
-    }
-    else {
+    } else if (get.name !== selectProduct) {
+      return getProduct
+    } else {
       return false
     }
   })

@@ -14,6 +14,7 @@ const ProductImg = ({ img }) => {
           src={img}
           alt={img}
           onClick={() => setImgCheng(img)}
+          alt={index}
         />
       ))}
     </div>

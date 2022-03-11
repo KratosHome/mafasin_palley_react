@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BsFileArrowDownFill, BsFileArrowUpFill } from "react-icons/bs";
 import "./ProductCount.css";
 

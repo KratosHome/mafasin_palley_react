@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import SmipeSlider from "./SimpleSlider/SmipeSlider";
+import React from "react";
 import HomeProductMain from "./HomeProductMein/HomeProductMain";
 import BanerMain from "./BanerMain/BanerMain";
 import TestinoiaksHome from "./TestinoiaksHome/TestinoiaksHome";

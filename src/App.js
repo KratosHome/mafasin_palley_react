@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./components/Body/body.css";
 import AppRouters from "./components/AppRouter";
 import Header from "./components/Header/Header";

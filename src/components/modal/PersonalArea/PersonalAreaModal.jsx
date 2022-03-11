@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./PersonalAreaModal.css"
 import { Link } from "react-router-dom";
-import personal_area from "../../../img/icons/personal_area.png";
 import logo from "../../../img/icons/logo.png"
 import md from "./PersonalAreaModal.module.css"
 

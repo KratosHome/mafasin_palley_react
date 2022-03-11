@@ -1,11 +1,10 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import Menu from "./Menu/Menu";
 import logo from "../../img/icons/logo.png";
 import search from "../../img/icons/search.png";
 import personal_area from "../../img/icons/personal_area.png";
 import like from "../../img/icons/like.png";
-import cart from "../../img/icons/cart.png";
 import { Link } from "react-router-dom";
 import PersonalAreaModal from "../modal/PersonalArea/PersonalAreaModal";
 import CartHeader from "../CartHeader/CartHeader";

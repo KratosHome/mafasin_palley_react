@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import "./MayBaner.css";
 import dataSlider from "./dataSlider";
 import Btnbaner from "./BTNBaner/BTNBaner";
-import { Prev } from "react-bootstrap/esm/PageItem";
 import SliderTite from "./../SliderTatel/SliderTitel"
 import { CSSTransition } from "react-transition-group";
 

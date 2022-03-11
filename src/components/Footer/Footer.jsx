@@ -35,6 +35,7 @@ const Footer = () => {
                 className="tvitera"
                 href="https://www.instagram.com/"
                 target="_blank"
+                rel="details"
               >
                 <i className="fa fa-twitter colerSocialNet"></i>
               </a>
@@ -42,6 +43,7 @@ const Footer = () => {
                 className="tvitera"
                 href="https://www.instagram.com/"
                 target="_blank"
+                rel="details"
               >
                 <i className="fa fa-instagram colerSocialNet"></i>
               </a>
@@ -49,6 +51,7 @@ const Footer = () => {
                 className="tvitera"
                 href="https://www.instagram.com/"
                 target="_blank"
+                rel="details"
               >
                 <i className="fab fa-bitcoin colerSocialNet"></i>
               </a>
@@ -56,6 +59,7 @@ const Footer = () => {
                 className="tvitera"
                 href="https://www.instagram.com/"
                 target="_blank"
+                rel="details"
               >
                 <i className="fab fa-apple-pay colerSocialNet"></i>
               </a>
@@ -91,7 +95,7 @@ const Footer = () => {
       <div className="footerBlok5">
         <div>
           © Copyright 2021 | PalleyStore By
-          <a className="tvitera" href="http://shopilaunch.com/" target="_blank">
+          <a className="tvitera" href="http://shopilaunch.com/" target="_blank" rel="details">
             {" "}
             ShopiLaunch.
           </a>{" "}
