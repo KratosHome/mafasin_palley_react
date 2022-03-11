@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./ProductPage.css";
 import HotDell from "../HomePage/HotDell/HotDell";
 import Grade from "../../components/UL/Grade/Grade";

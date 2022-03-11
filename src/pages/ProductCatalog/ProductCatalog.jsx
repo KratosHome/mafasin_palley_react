@@ -54,29 +54,15 @@ const ProductCatalog = () => {
   })
 
 
-
-  const FilterBrends = getProduct.filter(get => {
-    if (get.name === filterBrands) {
-      return true
-    } else if (get.name === "Oll Pages"){
-      return true
-    }
-  })
-
-  console.log(FilterBrends)
-
   const sortedPost = useMemo(() => {
     if (filter.sort) {
       return [...getProduct].sort((a, b) => a[filter.sort].localeCompare(b[filter.sort]))
     } else if (result) {
       return result
-    } else if (FilterBrends) {
-      return FilterBrends
     } else {
       return getProduct
     }
-  }, [filter.sort, getProduct, result, FilterBrends])
-
+  }, [filter.sort, getProduct, result])
 
 
   const sortedAndSearchedPosts = useMemo(() => {

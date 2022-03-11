@@ -42,8 +42,6 @@ const ProductTabs = ({
   const [tab, setTab] = useState(1);
   const [inimateRewise, seAnimeatetRewise] = useState(false);
 
-  const [css, serCss] = useState(true)
-
   return (
     <>
       <div>

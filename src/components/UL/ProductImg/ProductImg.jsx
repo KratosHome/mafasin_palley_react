@@ -5,7 +5,7 @@ const ProductImg = ({ img }) => {
   const [imgCheng, setImgCheng] = useState(img[0]);
   return (
     <div className="productImgTest">
-      <img src={imgCheng} className="ProductImgFirst" />
+      <img src={imgCheng} className="ProductImgFirst"  alt="img change" />
       {img.map((img, index) => (
         <img
           className="ProductImgAther"
@@ -14,7 +14,6 @@ const ProductImg = ({ img }) => {
           src={img}
           alt={img}
           onClick={() => setImgCheng(img)}
-          alt={index}
         />
       ))}
     </div>

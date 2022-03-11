@@ -5,7 +5,7 @@ import "./WriteReview.css";
 
 const WriteReview = ({sentReview, setPost, post}) => {
 
-  const [modal, setModal] = React.useState(false);
+  const [modal] = React.useState(false);
 
   return (
     <>
