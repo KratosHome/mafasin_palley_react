@@ -45,8 +45,6 @@ const ProductCatalog = () => {
       return true
     } else if (get.name === selectProduct) {
       return true
-    } else if (get.name !== selectProduct) {
-      return getProduct
     } else {
       return false
     }
