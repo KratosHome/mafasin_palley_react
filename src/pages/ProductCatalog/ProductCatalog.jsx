@@ -7,19 +7,15 @@ import { useTitle } from "../../hooks/useTitle";
 import Mayselect from "../../components/UL/select/MaySelect";
 import MayIput from "../../components/UL/MayInput/MayIput";
 import Filretproductleft from "../../components/FilretProductLeft/FilretProductLeft";
+import Serchbar from "../../components/SerchBar/SerchBar";
+import SearchProducr from "../../components/SearchProducr/SearchProducr";
+import { brandList, categoryList } from "../../constants/constants";
 
 
 const ProductCatalog = () => {
-
   useTitle("Product");
 
   const [getProduct, setGetProduct] = useState([]);
-  const [filter, setFilter] = useState({ sort: "", query: "" })
-
-
-  const [selectValue] = useState(["Oll Pages", "Home Page", "Best seller", "Hot deal"])
-
-  const [selectProduct, setSlectProduct] = useState("Oll Pages")
 
   useEffect(() => {
     fetchProducts();
@@ -30,41 +26,43 @@ const ProductCatalog = () => {
     setGetProduct(getProduct);
   }
 
- 
+  const [productList, setProductList] = useState(getProduct)
 
-  const result = getProduct.filter(get => {
-    if (get.categories[0] === selectProduct) {
-      return true
-    } else if (get.categories[1] === selectProduct) {
-      return true
-    } else if (get.categories[2] === selectProduct) {
-      return true
-    } else if (get.categories[3] === selectProduct) {
-      return true
-    } else if (get.categories[4] === selectProduct) {
-      return true
-    } else if (get.name === selectProduct) {
-      return true
-    } else {
-      return false
+  const handleChangeChecked = id => {
+    const brandStateList = brands
+    const changeCheckedBrands = brandStateList.map(item =>
+      item.id === id ? { ...item, checked: !item.checked } : item
+    )
+    setBrands(changeCheckedBrands)
+  }
+
+    
+  const [brands, setBrands] = useState(brandList)
+  const [category, setCatefory] = useState(categoryList)
+
+  const applyFilters = () => {
+    let updateList = getProduct
+
+    // Filter brend, categoty
+    const filterChecked = brands
+      .filter((item) => item.checked)
+      .map((item) => item.lable.toLowerCase());
+
+    if (filterChecked.length) {
+      updateList = updateList.filter((item) =>
+        filterChecked.includes(item.BrandName.toLowerCase())
+      )
     }
-  })
+
+    setProductList(updateList)
+  }
+
+  
+  useEffect(() => {
+    applyFilters()
+  }, [brands, getProduct])
 
 
-  const sortedPost = useMemo(() => {
-    if (filter.sort) {
-      return [...getProduct].sort((a, b) => a[filter.sort].localeCompare(b[filter.sort]))
-    } else if (result) {
-      return result
-    } else {
-      return getProduct
-    }
-  }, [filter.sort, getProduct, result])
-
-
-  const sortedAndSearchedPosts = useMemo(() => {
-    return sortedPost.filter(posts => posts.name.toLocaleUpperCase().includes(filter.query.toLocaleUpperCase()))
-  }, [filter.query, sortedPost])
 
   return (
     <div>
@@ -74,38 +72,17 @@ const ProductCatalog = () => {
             <div className="home_product_container">
               <h2>Products Pag </h2>
             </div>
-            <select
-              value={selectProduct}
-              onChange={e => setSlectProduct(e.target.value)}
-            >
-              {selectValue.map(opti =>
-                <option key={opti} value={opti} >
-                  {opti}
-                </option>
-              )}
-            </select>
-            <MayIput
-              value={filter.query}
-              onChange={e => setFilter({ ...filter, query: e.target.value })}
-              placeholder='Пошук'
-            />
-            <Mayselect
-              onChange={selectedSort => setFilter({ ...filter, sort: selectedSort })}
-              value={filter.sort}
-              defaultValue="Сортировка"
-              options={[
-                { value: "discription", name: "по релевантності" },
-                { value: "name", name: "по названию" },
-              ]}
-            />
+
+            <SearchProducr />
             <div className="FilterProductContainer">
-              <Filretproductleft
-                setSlectProduct={setSlectProduct}
-                getProduct={sortedAndSearchedPosts}
+              <Serchbar
+                brands={brands}
+                category={category}
+                changeChecked={handleChangeChecked}
               />
-              {sortedAndSearchedPosts.length ? (
+              {productList.length ? (
                 <div className="home_product_list">
-                  {sortedAndSearchedPosts.map((product, index) => (
+                  {productList.map((product, index) => (
                     <ProductList key={index} product={product} />
                   ))}
                 </div>
