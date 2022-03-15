@@ -1,5 +1,4 @@
-/*
-New test products
+// Product 
 [
 	{
 	  "id": 1,
@@ -8,62 +7,66 @@ New test products
 	  "newPrise": 15,
 	  "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
 	  "count": ["40"],
-	  "size": [],
-	  "color": [],
 	  "grade": 5,
+	  "categories": ["Relevance", "Hot deal", "New", "Case", "Headphones"],
+	  "BrandName": "VAIO",
+	  "size": ["M", "ML"],
+	  "color": ["Red", "Green"],
 	  "remainder": 30,
 	  "SoldInTwelveHours": 12,
-	  "categories": ["Home Page","Oll Pages"],
 	  "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
 	  "PRODUCT_DETAILS": ["You show me what is deep as sea",  "Crew neck", "Short sleeves","Large logo print to chest", "Regular fit", "True size"],
 	  "SIZE_FIT": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
 	  "ABOUT_ME": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
 	  "img": "/img/product/ChargeWorx_Folding.jpg",
-	  "cart_img": ["/img/product/ChargeWorx_Folding.jpg", "/img/product/15W_Wireless_Charging_1.jpg", "/img/product/15W_Wireless_Charging_2.jpg", "/img/product/100PD_Power_Bank.jpg_2.jpg"],
-	  "REVIEW": [{
+	  "cart_img": ["/img/product/ChargeWorx_Folding.jpg", "/img/product/ChargeWorx_Folding_2.jpg", "/img/product/ChargeWorx_Folding_3.jpg", "/img/product/ChargeWorx_Folding_4.jpg"],
+	  "REVIEW": [
+          {
 		  "id": 1,
 		  "name": "Dubrav",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 5
-	  },
-	  {
+        },
+        {
 		  "id": 2,
 		  "name": "Valintin",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 3
-	  }]
+          }]
 	},
-		{
+	{
 	  "id": 2,
 	  "name": "Clear Case With MagSafe",
 	  "prise": 30,
 	  "newPrise": 25,
 	  "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
 		"count": ["30"],
-	  "size": ["M"],
-	  "color": ["Green","Read"],
 	  "grade": 3,
+	  "categories": ["Relevance", "Adapter"],
+	  "BrandName": "Dell",
+	  "size": ["L", "ML"],
+	  "color": ["Black", "White", "Blue"],
 	  "remainder": 20,
 	  "SoldInTwelveHours": 5,
-	  "categories": ["Home Page","Oll Pages", "Hot deal"],
-	   "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
+	  "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
 	  "PRODUCT_DETAILS": ["You show me what is deep as sea",  "Crew neck", "Short sleeves","Large logo print to chest", "Regular fit", "True size"],
 	  "SIZE_FIT": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
 	  "ABOUT_ME": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
 	  "img": "/img/product/Clear_Case_With_MagSafe.jpg",
-	  "cart_img": ["/img/product/Clear_Case_With_MagSafe.jpg", "/img/product/15W_Wireless_Charging_1.jpg", "/img/product/15W_Wireless_Charging_2.jpg", "/img/product/100PD_Power_Bank.jpg_2.jpg"],
-	  "REVIEW": [{
+	  "cart_img": ["/img/product/Clear_Case_With_MagSafe.jpg", "/img/product/Clear_Case_With_MagSafe_1.jpg", "/img/product/Clear_Case_With_MagSafe_2.jpg", "/img/product/Clear_Case_With_MagSafe_3.jpg"],
+	  "REVIEW": [
+          {
 		  "id": 1,
 		  "name": "Dubrav",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 5
-	  },
-	  {
+        },
+        {
 		  "id": 2,
 		  "name": "Valintin",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 3
-	  }]
+          }]
 	},
 		{
 	  "id": 3,
@@ -72,30 +75,32 @@ New test products
 	  "newPrise": 25,
 	  "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
 	  "count": ["20"],
-	  "size": ["XL", "L", "M"],
-	  "color": ["Green","Read"],
 	  "grade": 5,
+	  "categories": ["Relevance", "Adapter", "Headphones", "Phones"],
+	  "BrandName":  "HP", 
+	  "size": ["M", "X"],
+	  "color": ["Red", "Green", "Blue"],
 	  "remainder": 10,
 	  "SoldInTwelveHours": 22,
-	  "categories": ["Home Page","Oll Pages", "Best seller", "Hot deal"],
 	  "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
 	  "PRODUCT_DETAILS": ["You show me what is deep as sea",  "Crew neck", "Short sleeves","Large logo print to chest", "Regular fit", "True size"],
 	  "SIZE_FIT": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
 	  "ABOUT_ME": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
 	  "img": "/img/product/HDMI_Multiport_Adapter.jpg",
 	  "cart_img": ["/img/product/HDMI_Multiport_Adapter.jpg", "/img/product/15W_Wireless_Charging_1.jpg", "/img/product/15W_Wireless_Charging_2.jpg", "/img/product/100PD_Power_Bank.jpg_2.jpg"],
-	  "REVIEW": [{
+	  "REVIEW": [
+          {
 		  "id": 1,
 		  "name": "Dubrav",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 5
-	  },
-	  {
+        },
+        {
 		  "id": 2,
 		  "name": "Valintin",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 3
-	  }]
+          }]
 	},
 	{
 	  "id": 4,
@@ -105,29 +110,31 @@ New test products
 	  "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
 	  "img": "/img/product/Might_Mini_130_30W.jpg",
 	  "count": ["20"],
-	  "size": ["XL", "L", "M"],
-	  "color": ["Green","Read"],
 	  "grade": 3,
+	  "categories": ["Relevance", "Hot deal", "New", "Phones"],
+	  "BrandName": "ASUS",
+	  "size": ["M", "X", "ML"],
+	  "color": ["Red", "Blue"],
 	  "remainder": 50,
 	  "SoldInTwelveHours": 20,
-	  "categories": ["Home Page","Oll Pages", "Best seller", "Hot deal"],
 	   "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
 	  "PRODUCT_DETAILS": ["You show me what is deep as sea",  "Crew neck", "Short sleeves","Large logo print to chest", "Regular fit", "True size"],
 	  "SIZE_FIT": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
 	  "ABOUT_ME": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
 	  "cart_img": ["/img/product/Might_Mini_130_30W.jpg", "/img/product/15W_Wireless_Charging_1.jpg", "/img/product/15W_Wireless_Charging_2.jpg", "/img/product/100PD_Power_Bank.jpg_2.jpg"],
-	  "REVIEW": [{
+	  "REVIEW": [
+          {
 		  "id": 1,
 		  "name": "Dubrav",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 5
-	  },
-	  {
+        },
+        {
 		  "id": 2,
 		  "name": "Valintin",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 3
-	  }]
+          }]
 	},
 	{
 	  "id": 5,
@@ -137,29 +144,31 @@ New test products
 	  "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
 	  "img": "/img/product/PowerBox_160_US.jpg",
 	  "count": ["20"],
-	  "size": ["XL", "L", "M"],
-	  "color": ["Green","Read"],
 	  "grade": 1,
+	  "categories": ["Relevance", "Headphones", "Phones"],
+	  "BrandName": "Lonovo",
+	  "size": [],
+	  "color": ["Red", "Green", "Black"],
 	  "remainder": 100,
 	   "SoldInTwelveHours": 37,
-	  "categories": ["Home Page","Oll Pages", "Best seller"],
 	   "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
 	  "PRODUCT_DETAILS": ["You show me what is deep as sea",  "Crew neck", "Short sleeves","Large logo print to chest", "Regular fit", "True size"],
 	  "SIZE_FIT": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
 	  "ABOUT_ME": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
 	  "cart_img": ["/img/product/PowerBox_160_US.jpg", "/img/product/15W_Wireless_Charging_1.jpg", "/img/product/15W_Wireless_Charging_2.jpg", "/img/product/100PD_Power_Bank.jpg_2.jpg"],
-	  "REVIEW": [{
+	  "REVIEW": [
+          {
 		  "id": 1,
 		  "name": "Dubrav",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 5
-	  },
-	  {
+        },
+        {
 		  "id": 2,
 		  "name": "Valintin",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 3
-	  }]
+          }]
 	},
 	{
 	  "id": 6,
@@ -169,29 +178,31 @@ New test products
 	  "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
 	  "img": "/img/product/Premium_World_Power.jpg",
 	  "count": ["20"],
-	  "size": ["XL", "L", "M"],
-	  "color": ["Green","Read"],
 	  "grade": 2,
+	  "categories": ["Relevance", "Phones"],
+	  "BrandName": "JBL", 
+	  "size": ["M", "X", "XS"],
+	  "color": ["White", "Blue"],
 	  "remainder": 850,
 	  "SoldInTwelveHours": 12,
-	  "categories": ["Home Page","Oll Pages", "Best seller", "Hot deal", "New"],
 	   "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
 	  "PRODUCT_DETAILS": ["You show me what is deep as sea",  "Crew neck", "Short sleeves","Large logo print to chest", "Regular fit", "True size"],
 	  "SIZE_FIT": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
 	  "ABOUT_ME": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
 	  "cart_img": ["/img/product/Premium_World_Power.jpg", "/img/product/15W_Wireless_Charging_1.jpg", "/img/product/15W_Wireless_Charging_2.jpg", "/img/product/100PD_Power_Bank.jpg_2.jpg"],
-	  "REVIEW": [{
+	  "REVIEW": [
+          {
 		  "id": 1,
 		  "name": "Dubrav",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 5
-	  },
-	  {
+        },
+        {
 		  "id": 2,
 		  "name": "Valintin",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 3
-	  }]
+        }]
 	},
 	{
 	  "id": 7,
@@ -201,29 +212,31 @@ New test products
 	  "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
 	  "img": "/img/product/Thin_Case_For_IPhone.jpg",
 	  "count": ["20"],
-	  "size": ["XL", "L", "M"],
-	  "color": ["Green","Read"],
 	  "grade": 5,
+	  "categories": ["Relevance", "Hot deal", "New", "Case", "Adapter"],
+	  "BrandName": "Iphone", 
+	  "size": ["XS", "L", "ML"],
+	  "color": ["Red", "Green", "Blue"],
 	  "remainder": 3,
 	   "SoldInTwelveHours": 25,
-	  "categories": ["Home Page","Oll Pages", "Best seller", "New"],
 	   "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
 	  "PRODUCT_DETAILS": ["You show me what is deep as sea",  "Crew neck", "Short sleeves","Large logo print to chest", "Regular fit", "True size"],
 	  "SIZE_FIT": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
 	  "ABOUT_ME": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
-	  "cart_img": ["/img/product/Thin_Case_For_IPhone.jpg", "/img/product/15W_Wireless_Charging_1.jpg", "/img/product/15W_Wireless_Charging_2.jpg", "/img/product/100PD_Power_Bank.jpg_2.jpg"],
-	  "REVIEW": [{
+	  "cart_img": ["/img/product/Thin_Case_For_IPhone.jpg", "/img/product/Thin_Smartphone_Case.jpg", "/img/product/15W_Wireless_Charging_2.jpg", "/img/product/100PD_Power_Bank.jpg_2.jpg"],
+	  "REVIEW": [
+          {
 		  "id": 1,
 		  "name": "Dubrav",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 5
-	  },
-	  {
+        },
+        {
 		  "id": 2,
 		  "name": "Valintin",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 3
-	  }]
+        }]
 	},
 	{
 	  "id": 8,
@@ -233,29 +246,31 @@ New test products
 	  "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
 	  "img": "/img/product/Thin_Smartphone_Case.jpg",
 	  "count": ["20"],
-	  "size": ["XL", "L", "M"],
-	  "color": ["Green","Read"],
 	 "grade": 4,
+	 "categories": ["Relevance", "New", "Case", "Adapter"],
+	  "BrandName": "Iphone",
+	  "size": ["M", "ML"],
+	  "color": ["Red", "Green", "Black"],
 	 "remainder": 0,
 	  "SoldInTwelveHours": 0,
-	  "categories": ["Home Page","Oll Pages", "Hot deal", "New"],
 	   "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
 	  "PRODUCT_DETAILS": ["You show me what is deep as sea",  "Crew neck", "Short sleeves","Large logo print to chest", "Regular fit", "True size"],
 	  "SIZE_FIT": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
 	  "ABOUT_ME": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
 	  "cart_img": ["/img/product/Thin_Smartphone_Case.jpg", "/img/product/15W_Wireless_Charging_1.jpg", "/img/product/15W_Wireless_Charging_2.jpg", "/img/product/100PD_Power_Bank.jpg_2.jpg"],
-	  "REVIEW": [{
+	  "REVIEW": [
+          {
 		  "id": 1,
 		  "name": "Dubrav",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 5
-	  },
-	  {
+        },
+        {
 		  "id": 2,
 		  "name": "Valintin",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 3
-	  }]
+        }]
 	},
 	{
 	  "id": 9,
@@ -265,29 +280,31 @@ New test products
 	  "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
 	  "img": "/img/product/Tile_Pro_Bluetooth_Tracker.jpg",
 	  "count": ["20"],
-	  "size": ["XL", "L", "M"],
-	  "color": ["Green","Read"],
 	  "grade": 5,
+	  "categories": ["Relevance", "Hot deal", "Best seller", "New", "Case", "Adapter", "Headphones", "Phones"],
+	  "BrandName": "JBL",
+	  "size": ["M", "X", "XS", "L", "ML"],
+	  "color": ["White", "Blue"],
 	  "remainder": 44,
-	   "SoldInTwelveHours": 0,
-	  "categories": ["Oll Pages", "Best seller", "New"],
-	   "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
+	  "SoldInTwelveHours": 0,
+	  "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
 	  "PRODUCT_DETAILS": ["You show me what is deep as sea",  "Crew neck", "Short sleeves","Large logo print to chest", "Regular fit", "True size"],
 	  "SIZE_FIT": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
 	  "ABOUT_ME": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
 	  "cart_img": ["/img/product/Tile_Pro_Bluetooth_Tracker.jpg", "/img/product/15W_Wireless_Charging_1.jpg", "/img/product/15W_Wireless_Charging_2.jpg", "/img/product/100PD_Power_Bank.jpg_2.jpg"],
-	  "REVIEW": [{
+	  "REVIEW": [
+          {
 		  "id": 1,
 		  "name": "Dubrav",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 5
-	  },
-	  {
+        },
+        {
 		  "id": 2,
 		  "name": "Valintin",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 3
-	  }]
+        }]
 	},
 	{
 	  "id": 10,
@@ -296,30 +313,32 @@ New test products
 	  "newPrise": 25,
 	  "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
 	  "count": ["20"],
-	  "size": ["XL", "L", "M"],
-	  "color": ["Green","Read"],
 	  "grade": 5,
+	  "categories": ["Relevance", "Hot deal", "Best seller", "Phones"],
+	  "BrandName": "VAIO",
+	  "size": [],
+	  "color": ["Red", "White", "Blue"],
 	  "remainder": 29,
-	   "SoldInTwelveHours": 1,
-	  "categories": ["Oll Pages", "Best seller"],
-	   "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
+	  "SoldInTwelveHours": 1,
+	  "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
 	  "PRODUCT_DETAILS": ["You show me what is deep as sea",  "Crew neck", "Short sleeves","Large logo print to chest", "Regular fit", "True size"],
 	  "SIZE_FIT": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
 	  "ABOUT_ME": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
 	  "img": "/img/product/75_Headset.jpg",
-	  "cart_img": ["/img/product/75_Headset.jpg", "/img/product/15W_Wireless_Charging_1.jpg", "/img/product/15W_Wireless_Charging_2.jpg", "/img/product/100PD_Power_Bank.jpg_2.jpg"],
-	  "REVIEW": [{
+	  "cart_img": ["/img/product/75_Headset.jpg", "/img/product/75_Headset_1.jpg", "/img/product/75_Headset_2.jpg", "/img/product/75_Headset_3.jpg"],
+	  "REVIEW": [
+          {
 		  "id": 1,
 		  "name": "Dubrav",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 5
-	  },
-	  {
+        },
+        {
 		  "id": 2,
 		  "name": "Valintin",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 3
-	  }]
+        }]
 	},
 	{
 	  "id": 11,
@@ -329,29 +348,31 @@ New test products
 	  "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
 	  "img": "/img/product/Windshield_Smartphone_Mount.jpg",
 	  "count": ["20"],
-	  "size": ["XL", "L", "M"],
-	  "color": ["Green","Read"],
 	  "grade": 0,
+	  "categories": ["Relevance", "Best seller", "New", "Phones"],
+	  "BrandName": "Dell",
+	  "size": ["M", "ML"],
+	  "color": ["Red", "Green", "Black"],
 	  "remainder": 0,
-	   "SoldInTwelveHours": 45,
-	  "categories": ["Oll Pages", "Best seller"],
-	   "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
+	  "SoldInTwelveHours": 45,
+	  "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
 	  "PRODUCT_DETAILS": ["You show me what is deep as sea",  "Crew neck", "Short sleeves","Large logo print to chest", "Regular fit", "True size"],
 	  "SIZE_FIT": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
 	  "ABOUT_ME": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
 	  "cart_img": ["/img/product/Windshield_Smartphone_Mount.jpg", "/img/product/15W_Wireless_Charging_1.jpg", "/img/product/15W_Wireless_Charging_2.jpg", "/img/product/100PD_Power_Bank.jpg_2.jpg"],
-	  "REVIEW": [{
+	  "REVIEW": [
+          {
 		  "id": 1,
 		  "name": "Dubrav",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 5
-	  },
-	  {
+        },
+        {
 		  "id": 2,
 		  "name": "Valintin",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 3
-	  }]
+        }]
 	},
 	{
 	  "id": 12,
@@ -361,29 +382,31 @@ New test products
 	  "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
 	  "img": "/img/product/Waterproof_Wireless-Charging.jpg",
 	  "count": ["20"],
-	  "size": ["XL", "L", "M"],
-	  "color": ["Green","Read"],
 	  "grade": 0,
+	  "categories": ["Relevance", "Hot deal", "Best seller", "New", "Case", "Adapter", "Headphones", "Phones"],
+	  "BrandName": "VAIO",
+	  "size": ["M", "X", "ML"],
+	  "color": ["Red", "Green"],
 	  "remainder": 30,
 	   "SoldInTwelveHours": 12,
-	  "categories": ["Oll Pages", "Hot deal", "New"],
 	   "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
 	  "PRODUCT_DETAILS": ["You show me what is deep as sea",  "Crew neck", "Short sleeves","Large logo print to chest", "Regular fit", "True size"],
 	  "SIZE_FIT": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
 	  "ABOUT_ME": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
 	  "cart_img": ["/img/product/Waterproof_Wireless-Charging.jpg", "/img/product/15W_Wireless_Charging_1.jpg", "/img/product/15W_Wireless_Charging_2.jpg", "/img/product/100PD_Power_Bank.jpg_2.jpg"],
-	  "REVIEW": [{
+	  "REVIEW": [
+          {
 		  "id": 1,
 		  "name": "Dubrav",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 5
-	  },
-	  {
+        },
+        {
 		  "id": 2,
 		  "name": "Valintin",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 3
-	  }]
+        }]
 	},
 	 {
 	  "id": 13,
@@ -392,30 +415,32 @@ New test products
 	  "newPrise": 25,
 	  "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
 	  "count": ["20"],
-	  "size": ["XL", "L", "M"],
-	  "color": ["Green","Read"],
 	  "grade": 4,
+	  "categories": ["Relevance", "Hot deal", "Adapter", "Phones"],
+	  "BrandName":  "Dell",
+	  "size": ["ML"],
+	  "color": ["White", "Blue"],
 	  "remainder": 53,
 	  "SoldInTwelveHours": 22,
-	  "categories": ["Oll Pages", "Hot deal", "New"],
 	  "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
 	  "PRODUCT_DETAILS": ["You show me what is deep as sea",  "Crew neck", "Short sleeves","Large logo print to chest", "Regular fit", "True size"],
 	  "SIZE_FIT": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
 	  "ABOUT_ME": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
 	  "img": "/img/product/15W_Wireless_Charging.jpg",
 	  "cart_img": ["/img/product/15W_Wireless_Charging.jpg", "/img/product/15W_Wireless_Charging_1.jpg", "/img/product/15W_Wireless_Charging_2.jpg", "/img/product/100PD_Power_Bank.jpg_2.jpg"],
-	  "REVIEW": [{
+	  "REVIEW": [
+          {
 		  "id": 1,
 		  "name": "Dubrav",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 5
-	  },
-	  {
+        },
+        {
 		  "id": 2,
 		  "name": "Valintin",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 3
-	  }]
+        }]
 	},
 	{
 	  "id": 14,
@@ -424,149 +449,67 @@ New test products
 	  "newPrise": 25,
 	  "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
 	  "img": "/img/product/100PD_Power_Bank.jpg",
-	  "cart_img": ["/img/product/100PD_Power_Bank.jpg", "/img/product/15W_Wireless_Charging_1.jpg", "/img/product/15W_Wireless_Charging_2.jpg", "/img/product/100PD_Power_Bank.jpg_2.jpg"],
+	  "cart_img": ["/img/product/100PD_Power_Bank.jpg", "/img/product/100PD_Power_Bank.jpg_1.jpg", "/img/product/100PD_Power_Bank.jpg_2.jpg", "/img/product/100PD_Power_Bank.jpg_3.jpg"],
 	  "count": ["20"],
-	  "size": ["XL", "L", "M"],
-	  "color": ["Green","Read"],
 	  "grade": 5,
+	  "categories": ["Relevance", "Headphones", "Phones"],
+	  "BrandName": "HP",
+	  "size": ["L", "ML"],
+	  "color": ["White", "Blue"],
 	  "remainder": 53,
 	  "SoldInTwelveHours": 22,
 	  "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
 	  "PRODUCT_DETAILS": ["You show me what is deep as sea",  "Crew neck", "Short sleeves","Large logo print to chest", "Regular fit", "True size"],
 	  "SIZE_FIT": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
 	  "ABOUT_ME": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
-	  "REVIEW": [{
+	  "REVIEW": [
+          {
 		  "id": 1,
 		  "name": "Dubrav",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 5
-	  },
-	  {
+        },
+        {
 		  "id": 2,
 		  "name": "Valintin",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 3
-	  }],
-	  "categories": ["Oll Pages", "Hot deal", "New"]
+	    }]
 	},
 	{
-	  "id": 14,
+	  "id": 15,
 	  "name": "Belkin Car Vent Mount",
 	  "prise": 30,
 	  "newPrise": 25,
 	  "discription": "Being able to read a novel in another language and understand it is a huge achievement. You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience. You might find yourself at the last page faster than you thought—once you begin reading these...",
 	  "img": "/img/product/Belkin_Car_Vent_Mount.jpg",
-	  "cart_img": ["/img/product/Belkin_Car_Vent_Mount.jpg", "/img/product/15W_Wireless_Charging_1.jpg", "/img/product/15W_Wireless_Charging_2.jpg", "/img/product/100PD_Power_Bank.jpg_2.jpg"],
+	  "cart_img": ["/img/product/Belkin_Car_Vent_Mount.jpg", "/img/product/Belkin_Car_Vent_Mount_2.jpg", "/img/product/Belkin_Car_Vent_Mount_3.jpg", "/img/product/Belkin_Car_Vent_Mount_4.jpg"],
 	  "count": ["20"],
-	  "size": ["XL", "L", "M"],
-	  "color": ["Green","Read"],
 	  "grade": 5,
+	  "categories": ["Relevance", "Hot deal", "Best seller", "New", "Adapter"],
+	  "BrandName": "ASUS", 
+	  "size": ["M"],
+	  "color": ["White", "Blue"],
 	  "remainder": 53,
 	  "SoldInTwelveHours": 22,
 	  "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
 	  "PRODUCT_DETAILS": ["You show me what is deep as sea",  "Crew neck", "Short sleeves","Large logo print to chest", "Regular fit", "True size"],
 	  "SIZE_FIT": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
 	  "ABOUT_ME": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton", "5% Elastane"],
-	  "REVIEW": [{
+	  "REVIEW": [
+          {
 		  "id": 1,
 		  "name": "Dubrav",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 5
-	  },
-	  {
+	     },
+	     {
 		  "id": 2,
 		  "name": "Valintin",
 		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
 		  "grade": 3
-	  }],
-	  "categories": ["Oll Pages", "Hot deal", "New"]
-	}
-]
-
-[ 
-	 "BRAND": "With eye-catching artwork, step-by-step diagrams, and illustrations that break down complicated ideas into manageable concepts, The Science Book will have readers conversant in genetic engineering, black holes, and global warming in no time. Along the way are found mini-biographies of the most well-known scientists, and a glossary of helpful scientific terms. For students, and students of the world, there is no better way to explore the fascinating, strange, and mysterious world of science than in The Science Book.",
-	  "PRODUCT_DETAILS": ["You show me what is deep as sea",  "Crew neck", "Short sleeves","Large logo print to chest", "Regular fit", "True size"],
-	  "SIZE_FIT": ["Model’s height: 182.5cm/6’0″", "Model is wearing: Size Medium"],
-	  "ABOUT_ME": ["Soft, breathable jersey", "T-shirt fabric", "Main: 95% Cotton, 5% Elastane"],
-	  "img": "/img/product/15W_Wireless_Charging.jpg",
-	  "cart_img": ["/img/product/15W_Wireless_Charging.jpg", "/img/product/15W_Wireless_Charging_1.jpg", "/img/product/15W_Wireless_Charging_2.jpg", "/img/product/100PD_Power_Bank.jpg_2.jpg"],
-	  "REVIEW": [{
-		  "id": 1,
-		  "name": "Dubrav",
-		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
-		  "grade": "5"
-	  },
-	  {
-		  "id": 2,
-		  "name": "Valintin",
-		  "text": "You’ll feel accomplished the moment you read that final page, close the book, and reflect on the experience.",
-		  "grade": "3"
-	  }
-]
-TestinoiaksHome 
-[
-	{
-		"text": "Saved our business! We have no regrets! Thanks for the great service. Palley is worth much more than I paid Saved our business! We have no regrets! Thanks for the great service. Palley is worth much more!",
-		"name": "DESTINEE",
-		"position": "Marketing Personal",
-		"image": "/img/reviews/people1.png",
-		"grade": 5
-	},
-		{
-		"text": "Saved our business! We have no regrets! Thanks for the great service. Palley is worth much more than I paid Saved our business! We have no regrets! Thanks for the great service. Palley is worth much more!",
-		"name": "TONY",
-		"position": "Marketing Personal",
-		"image":  "/img/reviews/people2.png",
-		"grade": 5
-	},
-	{
-		"text": "Saved our business! We have no regrets! Thanks for the great service. Palley is worth much more than I paid Saved our business! We have no regrets! Thanks for the great service. Palley is worth much more!",
-		"name": "ANTONY",
-		"position": "Marketing Personal",
-		"image":  "/img/reviews/people3.png",
-		"grade": 5
-	},
-	{
-		"text": "Saved our business! We have no regrets! Thanks for the great service. Palley is worth much more than I paid Saved our business! We have no regrets! Thanks for the great service. Palley is worth much more!",
-		"name": "ANNA",
-		"position": "Marketing Personal",
-		"image":  "/img/reviews/people4.png",
-		"grade": 5
+	     }]
 	}
 ]
 
 
-Instagram 
-[
-	{
-		"id": 1,
-		"image":"/img/instagrem/instagram1.jpeg",
-		"link":"http://instagram.com"
-	},
-	{
-		"id": 2,
-		"image":"/img/instagrem/instagram2.jpeg",
-		"link":"http://instagram.com"
-	},
-		{
-		"id": 3,
-		"image":"/img/instagrem/instagram3.jpeg",
-		"link":"http://instagram.com"
-	},
-		{
-		"id": 4,
-		"image":"/img/instagrem/instagram4.jpeg",
-		"link":"http://instagram.com"
-	},
-		{
-		"id": 5,
-		"image":"/img/instagrem/instagram5.jpeg",
-		"link":"http://instagram.com"
-	},
-		{
-		"id": 6,
-		"image":"/img/instagrem/instagram6.jpeg",
-		"link":"http://instagram.com"
-	}
-] 
- */
