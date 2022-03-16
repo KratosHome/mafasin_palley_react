@@ -28,7 +28,9 @@ const ProductCatalog = () => {
 
   const [productList, setProductList] = useState(getProduct)
 
-  const handleChangeChecked = id => {
+  const [brands, setBrands] = useState(brandList)
+
+  const handleChangeCheckedBrends = id => {
     const brandStateList = brands
     const changeCheckedBrands = brandStateList.map(item =>
       item.id === id ? { ...item, checked: !item.checked } : item
@@ -36,14 +38,22 @@ const ProductCatalog = () => {
     setBrands(changeCheckedBrands)
   }
 
-    
-  const [brands, setBrands] = useState(brandList)
   const [category, setCatefory] = useState(categoryList)
+
+  const handleChangeCheckedCategory = id => {
+    const brandStateList = category
+    const changeCheckedBrands = brandStateList.map(item =>
+      item.id === id ? { ...item, checked: !item.checked } : item
+    )
+    setCatefory(changeCheckedBrands)
+  }
+
+
 
   const applyFilters = () => {
     let updateList = getProduct
 
-    // Filter brend, categoty
+    // Filter brend
     const filterChecked = brands
       .filter((item) => item.checked)
       .map((item) => item.lable.toLowerCase());
@@ -54,13 +64,27 @@ const ProductCatalog = () => {
       )
     }
 
+    // Filter category
+    const filterCategoryChecked = category
+      .filter((item) => item.checked)
+      .map((item) => item.value);
+
+    if (filterCategoryChecked.length) {
+      updateList = updateList.filter((item) =>
+      item.categories.some(i => i.includes(filterCategoryChecked))
+      )
+    }
+
     setProductList(updateList)
   }
 
-  
+
+
+
+
   useEffect(() => {
     applyFilters()
-  }, [brands, getProduct])
+  }, [brands, getProduct, category])
 
 
 
@@ -78,7 +102,8 @@ const ProductCatalog = () => {
               <Serchbar
                 brands={brands}
                 category={category}
-                changeChecked={handleChangeChecked}
+                changeChecked={handleChangeCheckedBrends}
+                handleChangeCheckedCategory={handleChangeCheckedCategory}
               />
               {productList.length ? (
                 <div className="home_product_list">
