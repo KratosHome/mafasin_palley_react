@@ -1,0 +1,16 @@
+.MuiSlider-root {
+    width: 100%;
+}
+.MuiSlider-thumb {
+    color: #000;
+}
+.MuiSlider-rail {
+    color: rgba(0, 0, 0, 0.26);
+}
+.MuiSlider-track {
+    color: #000;
+}
+.MuiSlider-valueLabelCircle {
+    color: red;
+}
+

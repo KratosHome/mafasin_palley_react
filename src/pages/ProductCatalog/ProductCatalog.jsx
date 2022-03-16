@@ -28,6 +28,7 @@ const ProductCatalog = () => {
 
   const [productList, setProductList] = useState(getProduct)
 
+  // filter brends
   const [brands, setBrands] = useState(brandList)
 
   const handleChangeCheckedBrends = id => {
@@ -48,6 +49,13 @@ const ProductCatalog = () => {
     setCatefory(changeCheckedBrands)
   }
 
+  // Selecded Prise
+
+  const [selectedPrice, setSelectedPrice] = useState([5, 25])
+
+  const handleChangePrice = (event, value) => {
+    setSelectedPrice(value)
+  }
 
 
   const applyFilters = () => {
@@ -71,20 +79,31 @@ const ProductCatalog = () => {
 
     if (filterCategoryChecked.length) {
       updateList = updateList.filter((item) =>
-      item.categories.some(i => i.includes(filterCategoryChecked))
+        item.categories.some(i => i.includes(filterCategoryChecked))
       )
     }
+
+    // Filter Prise
+    const minPrise = selectedPrice[0]
+    const maxPrise = selectedPrice[1]
+
+    updateList = updateList.filter(
+      (item) => item.newPrise >= minPrise && item.newPrise <= maxPrise
+    )
 
     setProductList(updateList)
   }
 
 
 
-
-
   useEffect(() => {
     applyFilters()
-  }, [brands, getProduct, category])
+  }, [
+    brands,
+    getProduct,
+    category,
+    selectedPrice
+  ])
 
 
 
@@ -104,6 +123,8 @@ const ProductCatalog = () => {
                 category={category}
                 changeChecked={handleChangeCheckedBrends}
                 handleChangeCheckedCategory={handleChangeCheckedCategory}
+                selectedPrice={selectedPrice}
+                changePrice={handleChangePrice}
               />
               {productList.length ? (
                 <div className="home_product_list">

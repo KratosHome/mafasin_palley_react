@@ -1,12 +1,19 @@
 import React from 'react';
 import CheckBox from '../CheckBox/CheckBox';
-import FilterSlider from '../FilterSlider/FilterSlder';
+import FilterSlider from '../FilterSlider/FilterPrise';
 import "./SerchBar.css"
 
-const SerchBar = ({ brands, changeChecked, category, handleChangeCheckedCategory }) => {
+const SerchBar = ({
+    brands,
+    changeChecked,
+    category,
+    handleChangeCheckedCategory,
+    selectedPrice,
+    changePrice
+}) => {
     return (
         <div>
-            <div className='FiltetBrendH1'>
+            <div className='FiltetBrendH1' >
                 <p>Brends</p>
                 <div className='filterBrands'>
                     {brands.map(brand => (
@@ -32,7 +39,10 @@ const SerchBar = ({ brands, changeChecked, category, handleChangeCheckedCategory
             </div>
             <div>
                 <p>Prise</p>
-                <FilterSlider />
+                <FilterSlider
+                    valuePrise={selectedPrice}
+                    changePrice={changePrice}
+                />
             </div>
             <div>
                 <p>Reting</p>
