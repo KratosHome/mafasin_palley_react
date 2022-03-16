@@ -187,7 +187,7 @@ export const sixeList = [
 ];
 
 // Product 
-export const ProductListTwo = [
+export const ProductList = [
 	{
 	  "id": 1,
 	  "name": "ChargeWorx Folding",

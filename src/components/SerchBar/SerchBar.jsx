@@ -3,7 +3,7 @@ import CheckBox from '../CheckBox/CheckBox';
 import FilterSlider from '../FilterSlider/FilterSlder';
 import "./SerchBar.css"
 
-const SerchBar = ({ brands, changeChecked, category }) => {
+const SerchBar = ({ brands, changeChecked, category, handleChangeCheckedCategory }) => {
     return (
         <div>
             <div className='FiltetBrendH1'>
@@ -20,7 +20,15 @@ const SerchBar = ({ brands, changeChecked, category }) => {
             </div>
             <div className='FiltetBrendH1'>
                 <p>Categori</p>
-
+                <div className='filterBrands'>
+                    {category.map(brand => (
+                        <CheckBox
+                            key={brand.id}
+                            lablelist={brand}
+                            changeChecked={handleChangeCheckedCategory}
+                        />
+                    ))}
+                </div>
             </div>
             <div>
                 <p>Prise</p>
@@ -31,11 +39,11 @@ const SerchBar = ({ brands, changeChecked, category }) => {
             </div>
             <div>
                 <p>Size</p>
-              
+
             </div>
             <div>
                 <p>Color</p>
-          
+
             </div>
         </div>
     );
