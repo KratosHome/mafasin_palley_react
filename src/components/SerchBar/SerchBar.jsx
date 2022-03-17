@@ -1,9 +1,8 @@
 import React from 'react';
-import { ratingList } from '../../constants/constants';
+import { colorList, ratingList, sixeList } from '../../constants/constants';
 import CheckBox from '../CheckBox/CheckBox';
 import FilterSlider from '../FilterSlider/FilterPrise';
 import FiterButtonS from '../FiterButton/FiterButton';
-
 import "./SerchBar.css"
 
 
@@ -15,7 +14,11 @@ const SerchBar = ({
     selectedPrice,
     changePrice,
     changeButtonFilter,
-    buttonReting
+    buttonReting,
+    setButtonSize,
+    buttonSize,
+    setButtonColor,
+    buttonColor
 }) => {
     return (
         <div>
@@ -50,7 +53,6 @@ const SerchBar = ({
                     changePrice={changePrice}
                 />
             </div>
-
             <div>
                 <p>Reting</p>
                 <FiterButtonS
@@ -61,9 +63,19 @@ const SerchBar = ({
             </div>
             <div>
                 <p>Size</p>
+                <FiterButtonS
+                    options={sixeList}
+                    value={buttonSize}
+                    changeButtonFilter={setButtonSize}
+                />
             </div>
             <div>
                 <p>Color</p>
+                <FiterButtonS
+                    options={colorList}
+                    value={buttonColor}
+                    changeButtonFilter={setButtonColor}
+                />
             </div>
         </div>
     );

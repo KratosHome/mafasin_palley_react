@@ -57,6 +57,12 @@ const ProductCatalog = () => {
   // Filter Button 
   const [buttonReting, setButtonReting] = useState(null)
 
+  // Filter Button 
+  const [buttonSize, setButtonSize] = useState("")
+
+  // Filter Color 
+  const [buttonColor, setButtonColor] = useState("")
+
 
   useEffect(() => {
     const applyFilters = () => {
@@ -99,11 +105,22 @@ const ProductCatalog = () => {
         )
       }
 
+      // Retin size 
+      if (buttonSize) {
+        updateList = updateList.filter(
+          (item) => item.size.some(item => item.includes(buttonSize))
+        )
+      }
+
+      // Retin color 
+      if (buttonColor) {
+        updateList = updateList.filter(
+          (item) => item.color.some(item => item.includes(buttonColor))
+        )
+      }
+
       setProductList(updateList)
     }
-
-
-
 
     applyFilters()
   }, [
@@ -111,11 +128,12 @@ const ProductCatalog = () => {
     getProduct,
     category,
     selectedPrice,
-    buttonReting
+    buttonReting,
+    buttonSize,
+    buttonColor
   ])
 
-
-
+  
   return (
     <div>
       <div>
@@ -124,7 +142,6 @@ const ProductCatalog = () => {
             <div className="home_product_container">
               <h2>Products Pag </h2>
             </div>
-
             <SearchProducr />
             <div className="FilterProductContainer">
               <Serchbar
@@ -136,6 +153,10 @@ const ProductCatalog = () => {
                 changePrice={handleChangePrice}
                 changeButtonFilter={setButtonReting}
                 buttonReting={buttonReting}
+                buttonSize={buttonSize}
+                setButtonSize={setButtonSize}
+                buttonColor={buttonColor}
+                setButtonColor={setButtonColor}
               />
               {productList.length ? (
                 <div className="home_product_list">
