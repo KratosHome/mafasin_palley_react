@@ -36,6 +36,7 @@ const ProductCatalog = () => {
     setBrands(changeCheckedBrands)
   }
 
+  // Filter Category
   const [category, setCatefory] = useState(categoryList)
 
   const handleChangeCheckedCategory = id => {
@@ -86,7 +87,7 @@ const ProductCatalog = () => {
 
       if (filterCategoryChecked.length) {
         updateList = updateList.filter((item) =>
-          item.categories.some(i => i.includes(filterCategoryChecked))
+          item.categories.some(i => filterCategoryChecked.includes(i))
         )
       }
 
@@ -133,7 +134,10 @@ const ProductCatalog = () => {
     buttonColor
   ])
 
-  
+
+
+  const [openFilterMobile, setOpenFilterMobile] = useState(true)
+
   return (
     <div>
       <div>
@@ -144,20 +148,28 @@ const ProductCatalog = () => {
             </div>
             <SearchProducr />
             <div className="FilterProductContainer">
-              <Serchbar
-                brands={brands}
-                category={category}
-                changeChecked={handleChangeCheckedBrends}
-                handleChangeCheckedCategory={handleChangeCheckedCategory}
-                selectedPrice={selectedPrice}
-                changePrice={handleChangePrice}
-                changeButtonFilter={setButtonReting}
-                buttonReting={buttonReting}
-                buttonSize={buttonSize}
-                setButtonSize={setButtonSize}
-                buttonColor={buttonColor}
-                setButtonColor={setButtonColor}
-              />
+              <button
+                className="MobailBtn"
+                onClick={() => setOpenFilterMobile(!openFilterMobile)}
+              >
+                Filter
+              </button>
+              <div className={openFilterMobile ? "closeFilter" : "openFilter"}>
+                <Serchbar
+                  brands={brands}
+                  category={category}
+                  changeChecked={handleChangeCheckedBrends}
+                  handleChangeCheckedCategory={handleChangeCheckedCategory}
+                  selectedPrice={selectedPrice}
+                  changePrice={handleChangePrice}
+                  changeButtonFilter={setButtonReting}
+                  buttonReting={buttonReting}
+                  buttonSize={buttonSize}
+                  setButtonSize={setButtonSize}
+                  buttonColor={buttonColor}
+                  setButtonColor={setButtonColor}
+                />
+              </div>
               {productList.length ? (
                 <div className="home_product_list">
                   {productList.map((product, index) => (

@@ -10,5 +10,19 @@
     border-radius: 3%;
     overflow: auto;
 }
+@media (max-width: 800px) {
+    .SearchBarContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        border: 1px solid rgba(0,0,0, 0.25);
+        padding: 10px;
+    }
+    .FiltetBrendH1{
+        margin: 10px;
+    }
+    .FilterSliderSearcBar{
+       padding-bottom: 50px;
+    }
+}
 
 

@@ -1,4 +1,29 @@
-.FilterProductContainer{
+.FilterProductContainer {
     display: grid;
     grid-template-columns: 1fr 5fr;
+}
+.MobailBtn{
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .FilterProductContainer{
+        grid-template-columns: 1fr;
+    }
+    .MobailBtn{
+        display: block;
+        width: 25%;
+        height: 30px;
+        margin-top: 20px;
+    }
+    .closeFilter{
+        display: none;
+        transform: scale(0);
+    }
+    .openFilter{
+        display: block;
+        transform: scale(1);
+        transition: 500ms ease-in-out;
+        transform-origin: top;
+    }
 }

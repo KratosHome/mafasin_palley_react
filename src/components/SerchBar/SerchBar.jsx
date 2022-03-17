@@ -21,7 +21,7 @@ const SerchBar = ({
     buttonColor
 }) => {
     return (
-        <div>
+        <div className='SearchBarContainer'>
             <div className='FiltetBrendH1' >
                 <p>Brends</p>
                 <div className='filterBrands'>
@@ -46,14 +46,14 @@ const SerchBar = ({
                     ))}
                 </div>
             </div>
-            <div>
-                <p>Prise</p>
+            <div className='FiltetBrendH1'>
+                <p className='FilterSliderSearcBar'>Prise</p>
                 <FilterSlider
                     valuePrise={selectedPrice}
                     changePrice={changePrice}
                 />
             </div>
-            <div>
+            <div className='FiltetBrendH1'>
                 <p>Reting</p>
                 <FiterButtonS
                     options={ratingList}
@@ -61,7 +61,7 @@ const SerchBar = ({
                     changeButtonFilter={changeButtonFilter}
                 />
             </div>
-            <div>
+            <div className='FiltetBrendH1'>
                 <p>Size</p>
                 <FiterButtonS
                     options={sixeList}
@@ -69,7 +69,7 @@ const SerchBar = ({
                     changeButtonFilter={setButtonSize}
                 />
             </div>
-            <div>
+            <div className='FiltetBrendH1'>
                 <p>Color</p>
                 <FiterButtonS
                     options={colorList}
