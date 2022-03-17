@@ -60,16 +60,10 @@ const SerchBar = ({
                 />
             </div>
             <div>
-                <p>Reting</p>
-
-            </div>
-            <div>
                 <p>Size</p>
-
             </div>
             <div>
                 <p>Color</p>
-
             </div>
         </div>
     );

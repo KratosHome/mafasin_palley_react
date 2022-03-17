@@ -1,25 +1,25 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "./FiterButton.css"
 
 const FiterButtonS = ({ options, value, changeButtonFilter }) => {
 
-
     return (
-        <label
+        <form
             onClick={e => changeButtonFilter(e.target.value)}
             htmlFor={value}
-            className={value ? "FiterButtonInputActiv" : null}
         >
             {options.map(item =>
-                <input
-                    className="FiterButtonInput"
+                <button
+                    className={value === item.value ? "FiterButtonInputActiv" : "FiterButtonInput"}
                     key={item.id}
                     type="button"
-                    value={item.label}
+                    value={item.value}
                     id={item.value}
-                />
+                >
+                    {item.label}
+                </button>
             )}
-        </label>
+        </form>
     );
 }
 

@@ -1,12 +1,9 @@
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState } from "react";
 import PostServer from "../../API/PostServer";
 import ProductList from "../../components/ProductList/ProductList";
 import "./ProductCatalog.css";
 import Loader from "../../components/UL/Loader/Loader";
 import { useTitle } from "../../hooks/useTitle";
-import Mayselect from "../../components/UL/select/MaySelect";
-import MayIput from "../../components/UL/MayInput/MayIput";
-import Filretproductleft from "../../components/FilretProductLeft/FilretProductLeft";
 import Serchbar from "../../components/SerchBar/SerchBar";
 import SearchProducr from "../../components/SearchProducr/SearchProducr";
 import { brandList, categoryList } from "../../constants/constants";
@@ -63,52 +60,53 @@ const ProductCatalog = () => {
   const changeButtonFilter = (event, value) =>
     setButtonReting(buttonReting)
 
-  const applyFilters = () => {
-    let updateList = getProduct
-
-    // Filter brend
-    const filterChecked = brands
-      .filter((item) => item.checked)
-      .map((item) => item.lable.toLowerCase());
-
-    if (filterChecked.length) {
-      updateList = updateList.filter((item) =>
-        filterChecked.includes(item.BrandName.toLowerCase())
-      )
-    }
-
-    // Filter category
-    const filterCategoryChecked = category
-      .filter((item) => item.checked)
-      .map((item) => item.value);
-
-    if (filterCategoryChecked.length) {
-      updateList = updateList.filter((item) =>
-        item.categories.some(i => i.includes(filterCategoryChecked))
-      )
-    }
-
-    // Filter Prise
-    const minPrise = selectedPrice[0]
-    const maxPrise = selectedPrice[1]
-
-    updateList = updateList.filter(
-      (item) => item.newPrise >= minPrise && item.newPrise <= maxPrise
-    )
-
-    // Retin Filter 
-    if (buttonReting) {
-      updateList = updateList.filter(
-        (item) => parseInt(item.grade) === parseInt(buttonReting)
-      )
-    }
-
-    setProductList(updateList)
-  }
-
-
-
   useEffect(() => {
+    const applyFilters = () => {
+      let updateList = getProduct
+
+      // Filter brend
+      const filterChecked = brands
+        .filter((item) => item.checked)
+        .map((item) => item.lable.toLowerCase());
+
+      if (filterChecked.length) {
+        updateList = updateList.filter((item) =>
+          filterChecked.includes(item.BrandName.toLowerCase())
+        )
+      }
+
+      // Filter category
+      const filterCategoryChecked = category
+        .filter((item) => item.checked)
+        .map((item) => item.value);
+
+      if (filterCategoryChecked.length) {
+        updateList = updateList.filter((item) =>
+          item.categories.some(i => i.includes(filterCategoryChecked))
+        )
+      }
+
+      // Filter Prise
+      const minPrise = selectedPrice[0]
+      const maxPrise = selectedPrice[1]
+
+      updateList = updateList.filter(
+        (item) => item.newPrise >= minPrise && item.newPrise <= maxPrise
+      )
+
+      // Retin Filter 
+      if (buttonReting) {
+        updateList = updateList.filter(
+          (item) => parseInt(item.grade) === parseInt(buttonReting)
+        )
+      }
+
+      setProductList(updateList)
+    }
+
+
+
+
     applyFilters()
   }, [
     brands,
