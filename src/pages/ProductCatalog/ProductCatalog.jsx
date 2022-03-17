@@ -57,8 +57,6 @@ const ProductCatalog = () => {
   // Filter Button 
   const [buttonReting, setButtonReting] = useState(null)
 
-  const changeButtonFilter = (event, value) =>
-    setButtonReting(buttonReting)
 
   useEffect(() => {
     const applyFilters = () => {
