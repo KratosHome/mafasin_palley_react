@@ -66,6 +66,7 @@ const ProductCatalog = () => {
 
 
   useEffect(() => {
+
     const applyFilters = () => {
       let updateList = getProduct
 
@@ -79,7 +80,6 @@ const ProductCatalog = () => {
           filterChecked.includes(item.BrandName.toLowerCase())
         )
       }
-
       // Filter category
       const filterCategoryChecked = category
         .filter((item) => item.checked)
