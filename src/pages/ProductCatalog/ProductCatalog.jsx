@@ -57,6 +57,11 @@ const ProductCatalog = () => {
     setSelectedPrice(value)
   }
 
+  // Filter Button 
+  const [buttonReting, setButtonReting] = useState(null)
+
+  const changeButtonFilter = (event, value) =>
+    setButtonReting(buttonReting)
 
   const applyFilters = () => {
     let updateList = getProduct
@@ -91,6 +96,13 @@ const ProductCatalog = () => {
       (item) => item.newPrise >= minPrise && item.newPrise <= maxPrise
     )
 
+    // Retin Filter 
+    if (buttonReting) {
+      updateList = updateList.filter(
+        (item) => parseInt(item.grade) === parseInt(buttonReting)
+      )
+    }
+
     setProductList(updateList)
   }
 
@@ -102,7 +114,8 @@ const ProductCatalog = () => {
     brands,
     getProduct,
     category,
-    selectedPrice
+    selectedPrice,
+    buttonReting
   ])
 
 
@@ -125,6 +138,8 @@ const ProductCatalog = () => {
                 handleChangeCheckedCategory={handleChangeCheckedCategory}
                 selectedPrice={selectedPrice}
                 changePrice={handleChangePrice}
+                changeButtonFilter={setButtonReting}
+                buttonReting={buttonReting}
               />
               {productList.length ? (
                 <div className="home_product_list">
