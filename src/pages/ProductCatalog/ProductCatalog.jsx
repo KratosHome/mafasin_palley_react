@@ -146,8 +146,6 @@ const ProductCatalog = () => {
     inputSearch
   ])
 
-  console.log(inputSearch)
-
 
   const [openFilterMobile, setOpenFilterMobile] = useState(true)
 

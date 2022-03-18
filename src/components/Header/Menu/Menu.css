@@ -1,9 +1,8 @@
 @import url("http://fonts.cdnfonts.com/css/sofia-pro");
 
-
 .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-bottom: 10px;
 }
 
@@ -22,7 +21,8 @@
   font-weight: 600;
   text-transform: uppercase;
   padding-bottom: 55px;
-  margin-right: 50px;
+  margin-right: 5px;
+  white-space: nowrap;
 }
 
 .product_cubmenu > li {
@@ -118,9 +118,9 @@
 @media (max-width: 768px) {
   .menu_mob_open {
     position: fixed;
-    margin: auto;
-    top: 0;
-    left: -40px;
+    margin: 0;
+    top: -1px;
+    left: -41px;
     background-color: white;
     width: 320px;
     height: 100%;
@@ -132,16 +132,18 @@
 
   .menu {
     flex-direction: column;
-    justify-content: normal;
+    overflow: auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
   }
 
   .menu_mob_open_name {
     display: block;
     border: 1px solid black;
     width: 50%;
-    height: 60px;
+    height: 58px;
     background-color: black;
     color: white;
+    margin-top: -10px;
   }
 
   .menu_mob_open_name div:nth-child(4) {
@@ -227,10 +229,10 @@
     display: block;
     position: absolute;
     top: 0;
-    left: 170px;
+    left: 50%;
     z-index: 10;
     border: 1px solid black;
-    width: 152px;
+    width: 160px;
     height: 56px;
   }
 
@@ -260,15 +262,15 @@
 
   .menu li {
     width: 80%;
-    padding: 15px;
+    padding: 3%;
     border: 1px solid #e8caca;
   }
 
   .menu a {
     padding: 10px 100px 10px 10px;
+
     white-space: nowrap;
   }
-
   .product_cubmenu {
     display: none;
     position: absolute;

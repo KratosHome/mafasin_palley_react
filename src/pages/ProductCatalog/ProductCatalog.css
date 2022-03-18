@@ -2,28 +2,33 @@
     display: grid;
     grid-template-columns: 1fr 5fr;
 }
-.MobailBtn{
+.MobailBtn {
     display: none;
 }
 
 @media (max-width: 800px) {
-    .FilterProductContainer{
+    .FilterProductContainer {
         grid-template-columns: 1fr;
     }
-    .MobailBtn{
+    .MobailBtn {
         display: block;
-        width: 25%;
+        width: 20%;
         height: 30px;
         margin-top: 21px;
+        color: white;
+        background-color: #2dbbf0;
+        border: 1px solid #2dbbf0;;
     }
-    .closeFilter{
+    .closeFilter {
         display: none;
         transform: scale(0);
+
     }
-    .openFilter{
+    .openFilter {
         display: block;
         transform: scale(1);
         transition: 500ms ease-in-out;
         transform-origin: top;
+
     }
 }

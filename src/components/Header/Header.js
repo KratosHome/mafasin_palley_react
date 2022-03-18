@@ -9,10 +9,16 @@ import { Link } from "react-router-dom";
 import PersonalAreaModal from "../modal/PersonalArea/PersonalAreaModal";
 import CartHeader from "../CartHeader/CartHeader";
 import MayModal from "../UL/MayModal/MayModal";
+import SearchProducr from "../SearchProducr/SearchProducr";
 
 
 const Header = () => {
   const [modalOpen, setModalOpen] = useState(false)
+
+  const [openSearch, setOpenSearch] = useState(false)
+
+
+ 
 
   return (
     <>
@@ -31,16 +37,20 @@ const Header = () => {
             <Menu />
             <div className="col-sx-4 col-sm-4 col-md-4 col-ld-4">
               <div className="navigator">
-                <div className="search">
-                  <Link to="/Search">
+                <div
+                  className="search"
+                  onClick={() => setOpenSearch(!openSearch)}
+                >
+                  <Link to="/products">
                     <img src={search} alt="search" />
                   </Link>
                 </div>
+                {openSearch === true ? <SearchProducr /> : null}
                 <button className="personal_area" onClick={() => setModalOpen(true)}>
                   <img src={personal_area} alt="personal_area" />
                 </button>
                 <MayModal visivle={modalOpen} setVisible={setModalOpen} >
-                  <PersonalAreaModal setVisible={setModalOpen}/>
+                  <PersonalAreaModal setVisible={setModalOpen} />
                 </MayModal>
                 <div className="likes">
                   <Link to="/likes">
