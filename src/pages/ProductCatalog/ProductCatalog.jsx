@@ -64,6 +64,8 @@ const ProductCatalog = () => {
   // Filter Color 
   const [buttonColor, setButtonColor] = useState("")
 
+  // Search Filter
+  const [inputSearch, setInputSearch] = useState("")
 
   useEffect(() => {
 
@@ -80,6 +82,7 @@ const ProductCatalog = () => {
           filterChecked.includes(item.BrandName.toLowerCase())
         )
       }
+
       // Filter category
       const filterCategoryChecked = category
         .filter((item) => item.checked)
@@ -120,6 +123,14 @@ const ProductCatalog = () => {
         )
       }
 
+      // Search Bar 
+      if(inputSearch){
+        updateList = updateList.filter(item =>
+          item.name.toLowerCase().search(inputSearch.toLowerCase().trim()) !== -1
+        )
+      }
+
+
       setProductList(updateList)
     }
 
@@ -131,9 +142,11 @@ const ProductCatalog = () => {
     selectedPrice,
     buttonReting,
     buttonSize,
-    buttonColor
+    buttonColor,
+    inputSearch
   ])
 
+  console.log(inputSearch)
 
 
   const [openFilterMobile, setOpenFilterMobile] = useState(true)
@@ -146,7 +159,10 @@ const ProductCatalog = () => {
             <div className="home_product_container">
               <h2>Products Pag </h2>
             </div>
-            <SearchProducr />
+            <SearchProducr 
+              value={inputSearch}
+              changeInput={e => setInputSearch(e.target.value)}
+            />
             <div className="FilterProductContainer">
               <button
                 className="MobailBtn"
