@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {Link} from "react-router-dom";
 import "./Menu.css"
 import personal_area from "../../../img/icons/personal_area.png";
+import Loader from '../../UL/Loader/Loader';
 
 const Menu=() => {
     const [menuActive, setMenuActiv]=useState(false)
@@ -9,7 +10,7 @@ const Menu=() => {
         <>
             <div className="menu_mob_close_name" onClick={() => setMenuActiv(!menuActive)}>
                 <span></span>
-                <span></span>
+                <span></span> 
                 <span></span>
             </div>
             <div className="col-sx-5 col-sm-5 col-md-5 col-ld-5">
