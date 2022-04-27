@@ -20,9 +20,6 @@ function App() {
           <BrowserRouter>
               <ScrollToTop/>
               <Header/>
-              <p>
-                  vdsf
-              </p>
               <AppRouters/>
               <Footer/>
           </BrowserRouter>

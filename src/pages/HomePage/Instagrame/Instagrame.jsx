@@ -32,7 +32,7 @@ const Instagrame = () => {
   }
 
   const [width, height] = useWindowSize();
-  console.log(height)
+  
 
   let responsive = {};
 

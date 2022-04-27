@@ -13,7 +13,7 @@ const AppRouters = () => {
 
   return (
     <>
-      <Routes  >
+      <Routes >
         <Route path="/" element={<Main />} />
         <Route path="/contact_ass" element={<ContactPage />} />
         <Route path="/products" element={<ProductCatalog />} />
