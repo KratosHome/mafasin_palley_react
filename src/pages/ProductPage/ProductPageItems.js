@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import "./ProductPage.css";
 import HotDell from "../HomePage/HotDell/HotDell";
 import Grade from "../../components/UL/Grade/Grade";
@@ -9,9 +9,9 @@ import ProductCount from "../../components/UL/ProductCount/ProductCount";
 import ButtonAddToCart from "../../components/UL/ButtonAddToCart/ButtonAddToCart";
 import BayItNow from "../../components/UL/BayItNow/BayItNow";
 import ProductCategori from "../../components/UL/ProductCategori/ProductCategori";
-import ProductImg from "../../components/UL/ProductImg/ProductImg";
+import ProductImg from "./ProductImg/ProductImg";
 import ProductTabs from "./ProductTabs/ProductTabs";
-import { useTitle } from "../../hooks/useTitle";
+import {useTitle} from "../../hooks/useTitle";
 import WOW from "wow.js"
 
 
